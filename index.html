@@ -1,0 +1,5889 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LIPTAKO — L'eau qui porte votre identité</title>
+  <meta name="description" content="Première eau minérale institutionnelle premium du Niger. Captée dans le Liptako-Gourma, signée à votre image." />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="LIPTAKO — L'eau qui porte votre identité" />
+  <meta property="og:description" content="Première eau minérale institutionnelle premium du Niger. Captée dans le Liptako-Gourma à 200 m de profondeur, embouteillée à Niamey, signée à votre image." />
+  <meta property="og:image" content="assets/bottle-affaires.jpeg" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:site_name" content="LIPTAKO" />
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="LIPTAKO — L'eau qui porte votre identité" />
+  <meta name="twitter:description" content="Première eau minérale institutionnelle premium du Niger. Marque OAPI · 17 pays." />
+  <meta name="twitter:image" content="assets/bottle-affaires.jpeg" />
+
+  <!-- Schema.org Organisation -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "LIPTAKO",
+    "legalName": "Société Nigérienne d'Eau Minérale",
+    "description": "Première eau minérale institutionnelle premium du Niger. Captée dans le Liptako-Gourma.",
+    "url": "https://liptako.ne",
+    "logo": "assets/bottle-affaires.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Niamey",
+      "addressCountry": "NE"
+    },
+    "telephone": "+22796343412",
+    "foundingDate": "2026",
+    "areaServed": "Africa"
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Manrope:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <style>
+/* LIPTAKO — Premium institutional water site */
+
+:root {
+  --ink: #0B1F2E;
+  --ink-deep: #061320;
+  --emerald: #0A5C3A;
+  --emerald-2: #0F6E56;
+  --gold: #B8860B;
+  --gold-2: #D4A84A;
+  --cream: #F4EFE6;
+  --ice: #E1F5EE;
+  --paper: #FBF8F2;
+  --line: rgba(11, 31, 46, 0.12);
+  --line-light: rgba(255, 255, 255, 0.12);
+  --serif: "Cormorant Garamond", "Cormorant", "EB Garamond", Georgia, serif;
+  --sans: "Manrope", "Inter", system-ui, -apple-system, sans-serif;
+  --mono: "JetBrains Mono", "IBM Plex Mono", ui-monospace, monospace;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  width: 100%;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+}
+
+img { display: block; max-width: 100%; }
+
+button { font: inherit; color: inherit; background: none; border: none; cursor: pointer; }
+
+a { color: inherit; text-decoration: none; }
+
+::selection { background: var(--gold); color: var(--ink-deep); }
+
+/* Typography ----------------------------------------------------------- */
+
+.eyebrow {
+  font-family: var(--sans);
+  font-size: 11px;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--gold);
+}
+
+.eyebrow.muted { color: rgba(11,31,46,0.55); }
+.eyebrow.light { color: rgba(255,255,255,0.62); }
+
+.display {
+  font-family: var(--serif);
+  font-weight: 300;
+  letter-spacing: -0.01em;
+  line-height: 0.98;
+}
+
+.display em {
+  font-style: italic;
+  color: var(--gold);
+  font-weight: 400;
+}
+
+.lede {
+  font-family: var(--serif);
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 1.45;
+  color: rgba(11,31,46,0.75);
+}
+
+.label-vert {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-family: var(--sans);
+  font-size: 11px;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+}
+
+.divider-gold {
+  width: 48px;
+  height: 1px;
+  background: var(--gold);
+  display: block;
+}
+
+/* Layout shells -------------------------------------------------------- */
+
+.shell {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 56px;
+}
+
+@media (max-width: 720px) {
+  .shell { padding: 0 24px; }
+}
+
+/* Nav ----------------------------------------------------------------- */
+
+.nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 80;
+  padding: 22px 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to bottom, rgba(6,19,32,0.85), rgba(6,19,32,0));
+  transition: background 0.4s ease, padding 0.4s ease, color 0.4s ease;
+  color: #fff;
+}
+
+.nav.scrolled {
+  background: rgba(251, 248, 242, 0.92);
+  backdrop-filter: blur(16px) saturate(1.2);
+  -webkit-backdrop-filter: blur(16px) saturate(1.2);
+  color: var(--ink);
+  padding: 14px 56px;
+  border-bottom: 1px solid var(--line);
+}
+
+.nav .mark {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--serif);
+  font-size: 24px;
+  letter-spacing: 0.06em;
+  font-weight: 400;
+}
+
+.nav .mark .dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--gold);
+  box-shadow: 0 0 12px rgba(184,134,11,0.6);
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 36px;
+  font-size: 12px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.nav ul a { opacity: 0.78; transition: opacity 0.2s; }
+.nav ul a:hover { opacity: 1; }
+
+.nav .actions { display: flex; align-items: center; gap: 14px; }
+
+.btn-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 22px;
+  border-radius: 999px;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+.btn-pill.gold {
+  background: var(--gold);
+  color: var(--ink-deep);
+  border: 1px solid var(--gold);
+}
+.btn-pill.gold:hover { background: var(--gold-2); border-color: var(--gold-2); }
+
+.btn-pill.ghost {
+  background: transparent;
+  color: inherit;
+  border: 1px solid currentColor;
+  opacity: 0.85;
+}
+.btn-pill.ghost:hover { opacity: 1; background: rgba(255,255,255,0.08); }
+
+.nav.scrolled .btn-pill.ghost:hover { background: rgba(11,31,46,0.06); }
+
+@media (max-width: 960px) {
+  .nav ul { display: none; }
+  .nav { padding: 18px 24px; }
+  .nav.scrolled { padding: 12px 24px; }
+  .nav .actions .btn-pill.gold { display: none; }
+}
+@media (max-width: 600px) {
+  .nav .actions .btn-pill.ghost { display: none; }
+  .sk-trigger span { display: none; }
+  .sk-trigger { padding: 8px 10px; }
+}
+
+/* Hamburger button */
+.nav-burger {
+  display: none;
+  width: 40px; height: 40px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  margin-left: 8px;
+}
+.nav-burger span {
+  display: block;
+  width: 22px; height: 1.5px;
+  background: currentColor;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform-origin: center;
+}
+.nav-burger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+.nav-burger.open span:nth-child(2) { opacity: 0; }
+.nav-burger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+@media (max-width: 960px) {
+  .nav-burger { display: flex; }
+}
+
+/* Mobile drawer */
+.nav-drawer {
+  display: none;
+  position: fixed;
+  top: 0; right: 0; bottom: 0;
+  width: 280px;
+  background: rgba(6,19,32,0.97);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  z-index: 79;
+  padding: 88px 32px 40px;
+  flex-direction: column;
+  gap: 8px;
+  border-left: 1px solid rgba(255,255,255,0.08);
+  transform: translateX(100%);
+  transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.nav-drawer.open {
+  transform: translateX(0);
+}
+@media (max-width: 960px) {
+  .nav-drawer { display: flex; }
+}
+.nav-drawer a {
+  font-family: var(--sans);
+  font-size: 13px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: rgba(255,255,255,0.75);
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+  transition: color 0.2s;
+}
+.nav-drawer a:hover { color: #fff; }
+.nav-drawer .drawer-cta {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.nav-drawer-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 78;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+.nav-drawer-overlay.open { opacity: 1; }
+@media (max-width: 960px) {
+  .nav-drawer-overlay { display: block; }
+}
+
+/* Hero ---------------------------------------------------------------- */
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  background: #050b14;
+  color: #fff;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.hero::before { content: none; }
+
+.hero-rule {
+  position: absolute;
+  left: 0; right: 0;
+  bottom: 0;
+  height: 1px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  z-index: 1;
+}
+.hero-rule span {
+  display: block;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(184,134,11,0.35), transparent);
+  animation: ruleSlide 6s ease-in-out infinite alternate;
+}
+.hero-rule span:nth-child(2) { animation-delay: 1s; animation-duration: 7s; }
+.hero-rule span:nth-child(3) { animation-delay: 2s; animation-duration: 8s; }
+@keyframes ruleSlide {
+  0% { transform: translateX(-10%); opacity: 0.4; }
+  100% { transform: translateX(10%); opacity: 1; }
+}
+
+.hero-grain {
+  position: absolute; inset: 0;
+  background-image:
+    repeating-linear-gradient(45deg, rgba(255,255,255,0.02) 0 1px, transparent 1px 4px);
+  pointer-events: none;
+  mix-blend-mode: overlay;
+}
+
+.hero-grid {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 40px;
+  width: 100%;
+  align-items: center;
+  padding: 140px 56px 80px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-family: var(--serif);
+  font-weight: 300;
+  font-size: clamp(48px, 7vw, 104px);
+  line-height: 0.96;
+  letter-spacing: -0.015em;
+}
+.hero h1 em {
+  font-style: italic;
+  color: var(--gold);
+  font-weight: 400;
+}
+
+.hero .sub {
+  font-size: 18px;
+  line-height: 1.55;
+  color: rgba(255,255,255,0.78);
+  max-width: 480px;
+  margin-top: 28px;
+  font-weight: 300;
+}
+
+.hero .cta-row {
+  margin-top: 44px;
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.hero .meta {
+  position: absolute;
+  bottom: 32px;
+  left: 56px;
+  right: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  z-index: 2;
+  color: rgba(255,255,255,0.55);
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.hero .scroll-cue {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.hero .scroll-cue .line {
+  width: 1px; height: 36px;
+  background: linear-gradient(to bottom, var(--gold), transparent);
+  position: relative; overflow: hidden;
+}
+.hero .scroll-cue .line::after {
+  content: ""; position: absolute; left: 0; top: -100%;
+  width: 1px; height: 100%;
+  background: var(--gold);
+  animation: scrollDown 2.4s ease-in-out infinite;
+}
+@keyframes scrollDown {
+  0% { top: -100%; }
+  100% { top: 100%; }
+}
+
+.hero-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 30px;
+}
+.hero-eyebrow span { color: rgba(255,255,255,0.65); font-size: 11px; letter-spacing: 0.32em; text-transform: uppercase; font-weight: 600; }
+.hero-eyebrow .l { width: 32px; height: 1px; background: var(--gold); }
+
+/* Bottle stage */
+
+.bottle-stage {
+  position: relative;
+  height: clamp(520px, 70vh, 720px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottle-stage .halo {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 45%, rgba(225,245,238,0.18) 0%, transparent 55%);
+  filter: blur(20px);
+}
+
+.bottle-stage img.bottle {
+  position: relative;
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 60px 80px rgba(0,0,0,0.55)) drop-shadow(0 0 40px rgba(225,245,238,0.06));
+  animation: float 7s ease-in-out infinite;
+  z-index: 2;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-14px); }
+}
+
+.bottle-stage .gold-ring {
+  position: absolute;
+  width: 380px;
+  height: 380px;
+  border: 1px solid rgba(184,134,11,0.4);
+  border-radius: 50%;
+  animation: spin 60s linear infinite;
+}
+.bottle-stage .gold-ring::before, .bottle-stage .gold-ring::after {
+  content: ""; position: absolute; inset: 18px;
+  border-radius: 50%;
+  border: 1px solid rgba(184,134,11,0.18);
+}
+.bottle-stage .gold-ring::after { inset: 38px; border-color: rgba(184,134,11,0.10); }
+
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.bottle-stage .ring-label {
+  position: absolute;
+  top: -8px; left: 50%; transform: translateX(-50%);
+  background: var(--ink-deep);
+  padding: 4px 12px;
+  font-size: 9px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.bottle-stage .float-pill {
+  position: absolute;
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.78);
+  padding: 7px 14px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.14);
+  border-radius: 999px;
+  backdrop-filter: blur(8px);
+}
+
+.bottle-stage .float-pill .dot {
+  display: inline-block; width: 5px; height: 5px;
+  border-radius: 50%; margin-right: 8px;
+  background: var(--gold);
+  box-shadow: 0 0 8px var(--gold);
+}
+
+@media (max-width: 960px) {
+  .hero-grid { grid-template-columns: 1fr; padding: 120px 24px 60px; gap: 0; }
+  .bottle-stage { height: 380px; margin-top: 24px; }
+  .bottle-stage .gold-ring { width: 280px; height: 280px; }
+  .hero .meta { left: 24px; right: 24px; }
+}
+
+/* Section base -------------------------------------------------------- */
+
+section {
+  position: relative;
+  padding: 140px 0;
+}
+
+.section-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 60px;
+  margin-bottom: 72px;
+}
+
+.section-head h2 {
+  font-family: var(--serif);
+  font-weight: 300;
+  font-size: clamp(40px, 5vw, 72px);
+  line-height: 1.0;
+  max-width: 760px;
+  letter-spacing: -0.01em;
+}
+
+.section-head h2 em { font-style: italic; color: var(--gold); }
+
+.section-head .right {
+  text-align: right;
+  max-width: 320px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgba(11,31,46,0.65);
+  flex-shrink: 0;
+}
+
+.section-head .right .idx {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  color: var(--gold);
+  margin-bottom: 14px;
+  display: block;
+}
+
+@media (max-width: 880px) {
+  .section-head { flex-direction: column; align-items: flex-start; gap: 24px; }
+  .section-head .right { text-align: left; max-width: none; }
+  section { padding: 96px 0; }
+}
+
+/* Manifeste ----------------------------------------------------------- */
+
+.manifeste {
+  background: var(--paper);
+  color: var(--ink);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.manifeste-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.manifeste-grid p {
+  font-family: var(--serif);
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 1.45;
+  color: rgba(11,31,46,0.8);
+}
+
+.manifeste-grid p + p { margin-top: 28px; }
+
+.manifeste-grid p em { font-style: italic; color: var(--emerald); }
+
+.manifeste-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+}
+
+.stat {
+  background: var(--paper);
+  padding: 40px 32px;
+}
+
+.stat .num {
+  font-family: var(--serif);
+  font-weight: 300;
+  font-size: 72px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: var(--emerald);
+}
+
+.stat .num sup { font-size: 22px; vertical-align: top; color: var(--gold); margin-left: 4px; }
+
+.stat .label {
+  margin-top: 14px;
+  font-size: 11px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: rgba(11,31,46,0.6);
+}
+
+.stat .desc {
+  margin-top: 6px;
+  font-size: 13px;
+  color: rgba(11,31,46,0.7);
+  line-height: 1.5;
+}
+
+@media (max-width: 880px) {
+  .manifeste-grid { grid-template-columns: 1fr; gap: 56px; }
+}
+
+/* Storytelling ------------------------------------------------------- */
+
+.chapters {
+  background: var(--ink-deep);
+  color: #fff;
+  padding: 160px 0 120px;
+}
+
+.chapters .section-head h2 { color: #fff; }
+.chapters .section-head .right { color: rgba(255,255,255,0.6); }
+
+.chapter {
+  display: grid;
+  grid-template-columns: 80px 1fr 1.2fr;
+  gap: 48px;
+  padding: 56px 0;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  align-items: center;
+}
+.chapter:last-child { border-bottom: 1px solid rgba(255,255,255,0.08); }
+
+.chapter .num {
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  color: var(--gold);
+}
+
+.chapter .title {
+  font-family: var(--serif);
+  font-weight: 300;
+  font-size: clamp(28px, 3.4vw, 48px);
+  line-height: 1.05;
+}
+
+.chapter .desc {
+  color: rgba(255,255,255,0.7);
+  font-size: 15px;
+  line-height: 1.65;
+  max-width: 520px;
+}
+
+.chapter .desc small {
+  display: block;
+  margin-top: 14px;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  color: rgba(255,255,255,0.45);
+  text-transform: uppercase;
+}
+
+@media (max-width: 880px) {
+  .chapter { grid-template-columns: 60px 1fr; }
+  .chapter .desc { grid-column: 2; }
+}
+
+/* Configurator ------------------------------------------------------- */
+
+.configurator {
+  background: linear-gradient(180deg, #f7f3ea 0%, #ece6d8 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.configurator::before {
+  content: "";
+  position: absolute;
+  top: -200px; right: -200px;
+  width: 600px; height: 600px;
+  background: radial-gradient(circle, rgba(184,134,11,0.18), transparent 60%);
+  pointer-events: none;
+}
+
+.config-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.05fr 1fr;
+  gap: 48px;
+  align-items: stretch;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  padding: 56px;
+  box-shadow: 0 80px 120px -40px rgba(11,31,46,0.18);
+}
+
+.config-section h4 {
+  font-family: var(--sans);
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 14px;
+}
+
+.config-section .helper {
+  font-size: 13px;
+  color: rgba(11,31,46,0.6);
+  margin-bottom: 22px;
+  line-height: 1.5;
+}
+
+.option-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.18s ease;
+}
+.option:hover { border-color: var(--gold); }
+.option.active {
+  border-color: var(--emerald);
+  background: var(--ice);
+  box-shadow: inset 3px 0 0 var(--emerald);
+}
+
+.option .name {
+  font-size: 14px;
+  font-weight: 500;
+}
+.option .sub {
+  font-size: 11px;
+  color: rgba(11,31,46,0.55);
+  margin-top: 2px;
+  letter-spacing: 0.04em;
+}
+.option .meta {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: rgba(11,31,46,0.5);
+  letter-spacing: 0.05em;
+}
+
+.swatch-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+.swatch {
+  aspect-ratio: 1;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  position: relative;
+  transition: transform 0.2s;
+}
+.swatch:hover { transform: scale(1.05); }
+.swatch.active {
+  border-color: var(--ink);
+  box-shadow: 0 0 0 2px var(--paper), 0 0 0 3px var(--ink);
+}
+.swatch .label {
+  position: absolute;
+  bottom: -22px;
+  left: 0; right: 0;
+  text-align: center;
+  font-size: 9px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(11,31,46,0.55);
+}
+
+.config-preview {
+  background: linear-gradient(180deg, #061320 0%, #0b2536 100%);
+  border-radius: 2px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  overflow: hidden;
+  min-height: 480px;
+}
+
+.config-preview::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center, rgba(225,245,238,0.10), transparent 60%);
+}
+
+.config-preview .stage-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.config-preview img {
+  position: relative;
+  z-index: 2;
+  max-height: 540px;
+  width: auto;
+  filter: drop-shadow(0 40px 60px rgba(0,0,0,0.5));
+  transition: opacity 0.4s ease;
+}
+
+.config-preview .hud {
+  position: absolute;
+  top: 16px; left: 16px; right: 16px;
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--mono);
+  font-size: 10px;
+  color: rgba(255,255,255,0.5);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  z-index: 3;
+}
+
+.config-preview .hud .red { color: #f56565; }
+
+.config-preview .footnote {
+  position: absolute;
+  bottom: 16px; left: 16px; right: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  z-index: 3;
+}
+
+.config-preview .footnote .name {
+  font-family: var(--serif);
+  font-size: 22px;
+  font-weight: 300;
+  color: #fff;
+}
+.config-preview .footnote .ref {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  color: var(--gold);
+  text-transform: uppercase;
+}
+
+.config-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px dashed var(--line);
+  font-size: 13px;
+}
+.summary-row .k {
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(11,31,46,0.55);
+}
+.summary-row .v { font-weight: 600; }
+
+.summary-cta {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn-block {
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+.btn-block.solid {
+  background: var(--ink);
+  color: #fff;
+}
+.btn-block.solid:hover { background: var(--emerald); }
+.btn-block.ghost {
+  background: transparent;
+  border-color: var(--ink);
+  color: var(--ink);
+}
+.btn-block.ghost:hover { background: var(--ink); color: #fff; }
+
+@media (max-width: 1100px) {
+  .config-grid { grid-template-columns: 1fr; padding: 32px; }
+  .config-preview { min-height: 360px; }
+  .config-preview img { max-height: 360px; }
+}
+
+/* Institutional ------------------------------------------------------ */
+
+.institutional {
+  background: var(--paper);
+  transition: background 0.6s ease, color 0.6s ease;
+}
+
+.inst-tabs {
+  display: flex;
+  gap: 32px;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 56px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.inst-tabs::-webkit-scrollbar { display: none; }
+
+.inst-tab {
+  padding: 18px 4px;
+  font-size: 12px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: rgba(11,31,46,0.45);
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  white-space: nowrap;
+  transition: all 0.2s;
+}
+.inst-tab:hover { color: var(--ink); }
+.inst-tab.active {
+  color: var(--ink);
+  border-bottom-color: var(--gold);
+}
+
+.inst-stage {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 80px;
+  align-items: center;
+  min-height: 600px;
+}
+
+.inst-copy h3 {
+  font-family: var(--serif);
+  font-weight: 300;
+  font-size: 56px;
+  line-height: 1.0;
+  letter-spacing: -0.01em;
+  margin-bottom: 18px;
+}
+.inst-copy h3 em { font-style: italic; color: var(--gold); }
+
+.inst-copy .signature {
+  font-family: var(--sans);
+  font-size: 11px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 28px;
+  font-weight: 600;
+}
+
+.inst-copy .desc {
+  font-size: 16px;
+  line-height: 1.65;
+  color: rgba(11,31,46,0.72);
+  margin-bottom: 32px;
+  max-width: 460px;
+}
+
+.inst-pillars {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+}
+
+.pillar {
+  border-top: 1px solid var(--line);
+  padding-top: 16px;
+}
+.pillar .num {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--gold);
+  letter-spacing: 0.2em;
+}
+.pillar h5 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 6px;
+  letter-spacing: 0.02em;
+}
+.pillar p {
+  margin-top: 4px;
+  font-size: 13px;
+  color: rgba(11,31,46,0.65);
+  line-height: 1.5;
+}
+
+.inst-bottle {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+}
+
+.inst-bottle img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 50px 80px rgba(11,31,46,0.4));
+}
+
+.inst-bottle .vert-label {
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%) rotate(90deg);
+  transform-origin: center;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: rgba(11,31,46,0.4);
+  white-space: nowrap;
+}
+
+@media (max-width: 1000px) {
+  .inst-stage { grid-template-columns: 1fr; gap: 40px; }
+  .inst-bottle { height: 520px; }
+  .inst-copy h3 { font-size: 40px; }
+}
+
+/* Products gallery --------------------------------------------------- */
+
+.gammes {
+  background: linear-gradient(180deg, var(--ink-deep) 0%, #03080f 100%);
+  color: #fff;
+}
+.gammes .section-head h2 { color: #fff; }
+.gammes .section-head .right { color: rgba(255,255,255,0.55); }
+
+.gamme-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+.gamme {
+  background: var(--ink-deep);
+  padding: 32px 28px 28px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  transition: background 0.4s ease;
+  min-height: 440px;
+}
+
+.gamme:hover { background: #0d2233; }
+
+.gamme .tag {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  color: var(--gold);
+  text-transform: uppercase;
+}
+
+.gamme .img-wrap {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 24px 0;
+  position: relative;
+}
+
+.gamme .img-wrap img {
+  max-height: 240px;
+  width: auto;
+  filter: drop-shadow(0 20px 40px rgba(0,0,0,0.5));
+  transition: transform 0.5s ease;
+}
+.gamme:hover .img-wrap img { transform: translateY(-8px) scale(1.04); }
+
+.gamme h4 {
+  font-family: var(--serif);
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.gamme .vol {
+  font-size: 11px;
+  color: rgba(255,255,255,0.5);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.gamme .desc {
+  margin-top: 14px;
+  font-size: 13px;
+  line-height: 1.55;
+  color: rgba(255,255,255,0.65);
+}
+
+.gamme .meta-row {
+  margin-top: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255,255,255,0.10);
+}
+
+.gamme .price {
+  font-family: var(--serif);
+  font-size: 22px;
+  font-weight: 400;
+}
+.gamme .price small {
+  font-family: var(--sans);
+  font-size: 10px;
+  color: rgba(255,255,255,0.5);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-left: 4px;
+}
+
+.gamme .arrow {
+  width: 36px; height: 36px;
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+.gamme:hover .arrow {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: var(--ink-deep);
+}
+
+@media (max-width: 980px) {
+  .gamme-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 620px) {
+  .gamme-grid { grid-template-columns: 1fr; }
+}
+
+/* Niger story ------------------------------------------------------- */
+
+.niger {
+  background: var(--paper);
+  position: relative;
+  overflow: hidden;
+}
+
+.niger-marquee {
+  font-family: var(--serif);
+  font-weight: 300;
+  font-style: italic;
+  font-size: clamp(80px, 12vw, 180px);
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+  display: flex;
+  gap: 80px;
+  margin-bottom: 60px;
+  color: var(--ink);
+  opacity: 0.92;
+}
+.niger-marquee em { color: var(--gold); font-style: italic; }
+
+.niger-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 4px;
+}
+
+.niger-card {
+  position: relative;
+  aspect-ratio: 4/5;
+  overflow: hidden;
+  background: var(--ink);
+  color: #fff;
+}
+
+.niger-card.tall { grid-row: span 2; aspect-ratio: 4/9; }
+.niger-card.wide { grid-column: span 2; aspect-ratio: 8/5; }
+
+.niger-card .ph {
+  position: absolute; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+  background-image: repeating-linear-gradient(135deg, rgba(255,255,255,0.04) 0 1px, transparent 1px 14px);
+}
+
+.niger-card .ph .center {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.55);
+  text-align: center;
+  padding: 24px;
+}
+
+.niger-card .meta {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.niger-card .meta .ttl {
+  font-family: var(--serif);
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 1.05;
+}
+.niger-card .meta .num {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  color: var(--gold);
+}
+
+.niger-card.sahel { background: linear-gradient(135deg, #c19a4a, #8b6520); }
+.niger-card.fleuve { background: linear-gradient(180deg, #0a5c3a, #0b1f2e); }
+.niger-card.dunes { background: linear-gradient(180deg, #d9b075 0%, #7a4e1b 100%); }
+.niger-card.archi { background: linear-gradient(180deg, #4a5e6e 0%, #1a2a36 100%); }
+.niger-card.jeunesse { background: linear-gradient(135deg, #1B3A5C, #0b1f2e); }
+
+@media (max-width: 760px) {
+  .niger-grid { grid-template-columns: 1fr 1fr; }
+}
+
+/* Trust / Partners -------------------------------------------------- */
+
+.trust {
+  background: var(--ink-deep);
+  color: #fff;
+}
+.trust .section-head h2 { color: #fff; }
+.trust .section-head .right { color: rgba(255,255,255,0.55); }
+
+.trust-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: rgba(255,255,255,0.10);
+  border: 1px solid rgba(255,255,255,0.10);
+  margin-bottom: 80px;
+}
+
+.trust-stat {
+  background: var(--ink-deep);
+  padding: 36px 28px;
+}
+
+.trust-stat .num {
+  font-family: var(--serif);
+  font-size: 64px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: var(--gold);
+}
+.trust-stat .num sup {
+  font-size: 18px;
+  color: rgba(255,255,255,0.55);
+  margin-left: 4px;
+}
+
+.trust-stat .lab {
+  margin-top: 12px;
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.55);
+}
+
+.partner-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.partner {
+  background: var(--ink-deep);
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 160px;
+  transition: background 0.3s;
+}
+.partner:hover { background: #0d2233; }
+
+.partner .cat {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+.partner .name {
+  font-family: var(--serif);
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 1.05;
+}
+
+@media (max-width: 880px) {
+  .trust-stats, .partner-grid { grid-template-columns: 1fr 1fr; }
+}
+
+/* CTA strip -------------------------------------------------------- */
+
+.cta-strip {
+  background: linear-gradient(135deg, var(--emerald) 0%, #084a30 50%, #052a1c 100%);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+.cta-strip::before {
+  content: "";
+  position: absolute;
+  top: -100px; right: -100px;
+  width: 600px; height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(184,134,11,0.25), transparent 60%);
+}
+
+.cta-strip .inner {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 80px;
+  align-items: end;
+}
+
+.cta-strip h2 {
+  font-family: var(--serif);
+  font-weight: 300;
+  font-size: clamp(48px, 6vw, 88px);
+  line-height: 1;
+  letter-spacing: -0.01em;
+}
+.cta-strip h2 em { font-style: italic; color: var(--gold); }
+
+.cta-strip .right {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: rgba(255,255,255,0.8);
+}
+
+.cta-strip .row {
+  display: flex;
+  gap: 12px;
+  margin-top: 22px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 880px) { .cta-strip .inner { grid-template-columns: 1fr; gap: 40px; } }
+
+/* Footer ----------------------------------------------------------- */
+
+footer.foot {
+  background: #03080f;
+  color: rgba(255,255,255,0.7);
+  padding: 80px 0 32px;
+}
+
+.foot-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr 1fr;
+  gap: 48px;
+  padding-bottom: 56px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.foot-grid h6 {
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 18px;
+  font-weight: 600;
+}
+
+.foot-grid ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.foot-brand .mark {
+  font-family: var(--serif);
+  font-weight: 300;
+  font-size: 40px;
+  letter-spacing: 0.04em;
+  color: #fff;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.foot-brand .mark .dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: var(--gold);
+  box-shadow: 0 0 12px rgba(184,134,11,0.6);
+}
+
+.foot-brand p {
+  font-size: 14px;
+  line-height: 1.6;
+  max-width: 360px;
+}
+
+.foot-bar {
+  padding-top: 28px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.4);
+}
+
+@media (max-width: 880px) {
+  .foot-grid { grid-template-columns: 1fr 1fr; }
+}
+
+/* Concierge floater --------------------------------------------------- */
+
+.concierge {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 90;
+}
+
+.concierge-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 22px 14px 16px;
+  background: var(--ink);
+  color: #fff;
+  border-radius: 999px;
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+  border: 1px solid var(--gold);
+  transition: transform 0.2s;
+}
+.concierge-btn:hover { transform: translateY(-2px); }
+
+.concierge-btn .pulse {
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  background: var(--gold);
+  position: relative;
+}
+.concierge-btn .pulse::after {
+  content: "";
+  position: absolute; inset: -4px;
+  border-radius: 50%;
+  border: 1px solid var(--gold);
+  opacity: 0.6;
+  animation: pulse 1.8s ease-out infinite;
+}
+@keyframes pulse {
+  0% { transform: scale(0.8); opacity: 0.8; }
+  100% { transform: scale(2); opacity: 0; }
+}
+
+.concierge-panel {
+  position: absolute;
+  bottom: 70px;
+  right: 0;
+  width: 380px;
+  max-width: calc(100vw - 48px);
+  background: var(--ink);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.12);
+  box-shadow: 0 40px 80px rgba(0,0,0,0.45);
+  border-radius: 4px;
+  overflow: hidden;
+  transform-origin: bottom right;
+  animation: panelIn 0.25s ease-out;
+}
+@keyframes panelIn {
+  from { opacity: 0; transform: translateY(8px) scale(0.96); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.concierge-panel .head {
+  padding: 22px;
+  border-bottom: 1px solid rgba(255,255,255,0.10);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.concierge-panel .head .ttl {
+  font-family: var(--serif);
+  font-size: 22px;
+  font-weight: 300;
+}
+.concierge-panel .head .ttl em { color: var(--gold); font-style: italic; }
+.concierge-panel .head .status {
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.5);
+  display: flex; align-items: center; gap: 6px;
+}
+.concierge-panel .head .status .live {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: #4ade80; box-shadow: 0 0 6px #4ade80;
+}
+
+.concierge-panel .body {
+  padding: 22px;
+  max-height: 320px;
+  overflow-y: auto;
+}
+
+.bubble {
+  padding: 12px 14px;
+  border-radius: 12px;
+  font-size: 13px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  max-width: 88%;
+}
+.bubble.ai {
+  background: rgba(255,255,255,0.08);
+  border-bottom-left-radius: 2px;
+}
+.bubble.me {
+  background: var(--gold);
+  color: var(--ink-deep);
+  margin-left: auto;
+  border-bottom-right-radius: 2px;
+  font-weight: 500;
+}
+
+.quick {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+.quick button {
+  font-size: 11px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.18);
+  color: rgba(255,255,255,0.8);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.quick button:hover { background: var(--gold); color: var(--ink-deep); border-color: var(--gold); }
+
+.concierge-panel .foot {
+  padding: 12px 16px;
+  border-top: 1px solid rgba(255,255,255,0.10);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.4);
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Tweaks panel-friendly utility */
+.hidden { display: none !important; }
+
+/* fade-in on scroll */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.9s ease, transform 0.9s ease;
+}
+.reveal.in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ====================================================================
+   v2 ADDITIONS — image blend, tilt, waves, modal, magnetic, cursor
+   ==================================================================== */
+
+/* Scroll progress bar */
+.scroll-progress {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  z-index: 100;
+  background: rgba(255,255,255,0.05);
+  pointer-events: none;
+}
+.scroll-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--gold), var(--emerald-2));
+  transition: width 0.1s linear;
+  box-shadow: 0 0 12px rgba(184,134,11,0.6);
+}
+
+/* Custom cursor */
+.cursor-dot, .cursor-ring {
+  position: fixed;
+  top: 0; left: 0;
+  pointer-events: none;
+  z-index: 9999;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: difference;
+  will-change: transform;
+}
+.cursor-dot {
+  width: 6px; height: 6px;
+  background: #fff;
+  margin-left: -3px; margin-top: -3px;
+}
+.cursor-ring {
+  width: 36px; height: 36px;
+  border: 1px solid rgba(255,255,255,0.4);
+  margin-left: -18px; margin-top: -18px;
+  transition: width 0.2s, height 0.2s, margin 0.2s, border-color 0.2s;
+}
+.cursor-ring.hover {
+  width: 60px; height: 60px;
+  margin-left: -30px; margin-top: -30px;
+  border-color: var(--gold);
+}
+@media (pointer: coarse) {
+  .cursor-dot, .cursor-ring { display: none; }
+}
+
+/* Hero waves + parallax bottle */
+.hero-waves {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 240px;
+  z-index: 1;
+  pointer-events: none;
+}
+.hero-waves svg { width: 100%; height: 100%; display: block; }
+.hero-waves .wave {
+  animation: waveSlide 14s ease-in-out infinite alternate;
+  transform-origin: center;
+}
+.hero-waves .wave.w2 { animation-duration: 18s; animation-direction: alternate-reverse; }
+.hero-waves .wave.w3 { animation-duration: 22s; }
+@keyframes waveSlide {
+  0% { transform: translateX(-2%) scaleY(1); }
+  100% { transform: translateX(2%) scaleY(1.05); }
+}
+
+.hero-trust {
+  margin-top: 36px;
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.55);
+}
+.hero-trust .ht-item { display: flex; align-items: center; gap: 8px; }
+.hero-trust .dot { width: 5px; height: 5px; border-radius: 50%; background: rgba(225,245,238,0.5); }
+.hero-trust .dot.gold { background: var(--gold); box-shadow: 0 0 8px var(--gold); }
+
+.bottle-stage {
+  transition: transform 0.4s cubic-bezier(0.2, 0.7, 0.2, 1);
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+.bottle-frame {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  transform-style: preserve-3d;
+}
+
+/* Blend bottle JPEG into dark hero — mask + glow */
+.bottle-stage img.bottle {
+  height: 100%;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  border-radius: 6px;
+  filter:
+    drop-shadow(0 60px 80px rgba(0,0,0,0.55))
+    drop-shadow(0 0 60px rgba(225,245,238,0.08));
+  -webkit-mask-image: radial-gradient(ellipse 80% 90% at 50% 50%, #000 60%, transparent 100%);
+          mask-image: radial-gradient(ellipse 80% 90% at 50% 50%, #000 60%, transparent 100%);
+  mix-blend-mode: lighten;
+  opacity: 0.95;
+  transform: translateZ(40px);
+  animation: none;
+}
+
+.bottle-frame {
+  animation: float 7s ease-in-out infinite;
+}
+
+.bottle-glare {
+  position: absolute; inset: 0;
+  background: radial-gradient(circle at var(--glare-x, 50%) var(--glare-y, 50%), rgba(255,255,255,0.18), transparent 40%);
+  pointer-events: none;
+  opacity: var(--glare-o, 0);
+  transition: opacity 0.3s;
+  border-radius: 6px;
+  mix-blend-mode: overlay;
+}
+
+.float-pill { transition: transform 0.5s ease; }
+.float-pill.p-1 { top: 8%; left: 0%; animation: floatPill 5s 0.0s ease-in-out infinite alternate; }
+.float-pill.p-2 { top: 48%; right: -2%; animation: floatPill 6s 0.7s ease-in-out infinite alternate; }
+.float-pill.p-3 { bottom: 8%; left: 6%; animation: floatPill 7s 1.2s ease-in-out infinite alternate; }
+@keyframes floatPill {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-8px); }
+}
+
+/* Hero h1 split entrance */
+.split-in span {
+  display: block;
+  opacity: 0;
+  transform: translateY(40px) rotateX(-30deg);
+  animation: splitIn 1s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+  transform-origin: 50% 100%;
+}
+.split-in span:nth-child(1) { animation-delay: 0.6s; }
+.split-in span:nth-child(2) { animation-delay: 0.75s; }
+.split-in span:nth-child(3) { animation-delay: 0.9s; }
+@keyframes splitIn {
+  to { opacity: 1; transform: translateY(0) rotateX(0); }
+}
+
+/* Magnetic buttons */
+.magnet { transition: transform 0.25s cubic-bezier(0.2, 0.7, 0.2, 1); will-change: transform; }
+
+.btn-pill .arrow-i {
+  display: inline-block;
+  transition: transform 0.3s;
+}
+.btn-pill:hover .arrow-i { transform: translateX(4px); }
+
+.btn-pill.ghost.dark {
+  border-color: var(--ink);
+  color: var(--ink);
+}
+.btn-pill.ghost.dark:hover { background: var(--ink); color: #fff; }
+
+.manifeste-cta { margin-top: 36px; }
+.chapters-cta, .gammes-cta { margin-top: 64px; display: flex; justify-content: center; }
+
+/* Institutional v2 — full-bleed poster with tilt */
+.institutional { position: relative; padding: 160px 0; overflow: hidden; }
+
+.inst-bg-glow {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  transition: background 0.8s ease;
+}
+
+.inst-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 80px;
+  align-items: center;
+  margin-bottom: 80px;
+  position: relative;
+  z-index: 1;
+}
+
+.poster-stage {
+  perspective: 1400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.poster {
+  position: relative;
+  width: 100%;
+  max-width: 520px;
+  aspect-ratio: 2/3;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: zoom-in;
+  box-shadow:
+    0 50px 80px rgba(11,31,46,0.35),
+    0 20px 40px rgba(11,31,46,0.25),
+    0 0 0 1px rgba(255,255,255,0.05);
+  transition: transform 0.5s cubic-bezier(0.2, 0.7, 0.2, 1), box-shadow 0.5s;
+  will-change: transform;
+  transform-style: preserve-3d;
+  background: var(--ink-deep);
+}
+
+.poster img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transform: translateZ(0);
+}
+
+.poster-glare {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(circle at var(--glare-x, 50%) var(--glare-y, 50%), rgba(255,255,255,0.4), transparent 35%);
+  mix-blend-mode: overlay;
+  opacity: var(--glare-o, 0);
+  transition: opacity 0.3s;
+}
+
+.poster-corner {
+  position: absolute;
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.22em;
+  color: rgba(255,255,255,0.6);
+  background: rgba(0,0,0,0.45);
+  backdrop-filter: blur(6px);
+  padding: 5px 9px;
+  border-radius: 2px;
+  pointer-events: none;
+  z-index: 3;
+}
+.poster-corner.tl { top: 16px; left: 16px; }
+.poster-corner.tr { top: 16px; right: 16px; }
+.poster-corner.bl { bottom: 16px; left: 16px; }
+.poster-corner.br { bottom: 16px; right: 16px; }
+
+.poster-zoom {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 56px; height: 56px;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(8px);
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+  z-index: 4;
+}
+.poster:hover .poster-zoom { opacity: 1; }
+
+.inst-thumbs {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 12px;
+  position: relative;
+  z-index: 1;
+}
+.thumb {
+  position: relative;
+  padding: 0;
+  border-radius: 4px;
+  overflow: hidden;
+  background: none;
+  border: 2px solid transparent;
+  transition: transform 0.25s, border-color 0.25s;
+  aspect-ratio: 2/3;
+}
+.thumb:hover { transform: translateY(-4px); }
+.thumb.active { transform: scale(1.04); }
+.thumb img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: saturate(0.85) brightness(0.9);
+  transition: filter 0.3s;
+}
+.thumb:hover img, .thumb.active img { filter: saturate(1) brightness(1); }
+
+.thumb-cap {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  padding: 8px 10px;
+  font-size: 9px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+  backdrop-filter: blur(4px);
+}
+
+.inst-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 36px;
+  flex-wrap: wrap;
+}
+
+.btn-pill.solid-acc {
+  border: 1px solid transparent;
+  font-weight: 700;
+}
+.btn-pill.solid-acc:hover {
+  filter: brightness(1.1);
+}
+
+@media (max-width: 1000px) {
+  .inst-layout { grid-template-columns: 1fr; }
+  .inst-thumbs { grid-template-columns: repeat(4, 1fr); }
+  .poster { max-width: 360px; margin: 0 auto; }
+}
+@media (max-width: 640px) {
+  .inst-thumbs { grid-template-columns: repeat(3, 1fr); }
+  /* Scale down bot on very small screens */
+  .lbot-wrap { bottom: 80px; right: 16px; }
+  .lbot { transform-origin: bottom right; }
+  .lbot-head { width: 64px; height: 54px; border-radius: 14px; }
+  .lbot-bubble { max-width: 180px; font-size: 12px; }
+  .concierge { bottom: 16px; right: 16px; }
+  .concierge-btn { padding: 11px 16px 11px 12px; font-size: 11px; }
+}
+
+/* Poster lightbox */
+.poster-lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(3,8,15,0.94);
+  z-index: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  animation: fadeIn 0.3s ease;
+  cursor: zoom-out;
+}
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+.poster-lightbox img {
+  max-height: 92vh;
+  max-width: 92vw;
+  width: auto;
+  height: auto;
+  box-shadow: 0 60px 120px rgba(0,0,0,0.6);
+  border-radius: 8px;
+  animation: zoomIn 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+@keyframes zoomIn { from { opacity: 0; transform: scale(0.92); } to { opacity: 1; transform: scale(1); } }
+
+.lb-close {
+  position: absolute;
+  top: 24px; right: 24px;
+  width: 48px; height: 48px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.08);
+  color: #fff;
+  font-size: 16px;
+  border: 1px solid rgba(255,255,255,0.18);
+  cursor: pointer;
+}
+.lb-close:hover { background: var(--gold); color: var(--ink-deep); border-color: var(--gold); }
+
+.lb-meta {
+  position: absolute;
+  bottom: 32px; left: 32px;
+  color: #fff;
+}
+.lb-eye {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.24em;
+  color: var(--gold);
+}
+.lb-name {
+  font-family: var(--serif);
+  font-size: 32px;
+  font-weight: 300;
+  margin-top: 6px;
+}
+
+/* Gamme tilt + glare */
+.gamme {
+  transform-style: preserve-3d;
+  transition: transform 0.4s cubic-bezier(0.2, 0.7, 0.2, 1), background 0.4s ease;
+  will-change: transform;
+  position: relative;
+}
+.gamme-glare {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at var(--glare-x, 50%) var(--glare-y, 50%), rgba(255,255,255,0.20), transparent 40%);
+  pointer-events: none;
+  opacity: var(--glare-o, 0);
+  transition: opacity 0.3s;
+  mix-blend-mode: overlay;
+}
+
+.gamme img {
+  -webkit-mask-image: radial-gradient(ellipse 75% 90% at 50% 50%, #000 55%, transparent 100%);
+          mask-image: radial-gradient(ellipse 75% 90% at 50% 50%, #000 55%, transparent 100%);
+  mix-blend-mode: lighten;
+  filter: drop-shadow(0 20px 40px rgba(0,0,0,0.5)) brightness(1.05);
+}
+
+.gamme .arrow {
+  cursor: pointer;
+  color: #fff;
+}
+
+/* CTA strip orbs */
+.cta-bg-anim { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.5;
+  animation: orbDrift 16s ease-in-out infinite alternate;
+}
+.orb.o1 { width: 400px; height: 400px; background: var(--gold); top: -120px; left: 10%; }
+.orb.o2 { width: 500px; height: 500px; background: var(--emerald-2); bottom: -200px; right: 5%; animation-duration: 22s; animation-direction: alternate-reverse; }
+.orb.o3 { width: 300px; height: 300px; background: rgba(225,245,238,0.6); top: 30%; right: 30%; animation-duration: 26s; }
+@keyframes orbDrift {
+  0% { transform: translate(0,0); }
+  100% { transform: translate(40px, -30px); }
+}
+
+/* Partner button */
+.partner {
+  text-align: left;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+.partner-go {
+  margin-top: auto;
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.4);
+  transition: color 0.2s;
+}
+.partner:hover .partner-go { color: var(--gold); }
+
+/* ===========  MODAL  =========== */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(3,8,15,0.85);
+  backdrop-filter: blur(12px) saturate(1.2);
+  z-index: 250;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  animation: fadeIn 0.25s ease;
+}
+
+.modal-shell {
+  width: 100%;
+  max-width: 980px;
+  background: var(--paper);
+  border-radius: 6px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 0.85fr 1fr;
+  box-shadow: 0 60px 120px rgba(0,0,0,0.5);
+  animation: modalIn 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+  position: relative;
+  max-height: 92vh;
+}
+@keyframes modalIn {
+  from { opacity: 0; transform: translateY(20px) scale(0.97); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.modal-close {
+  position: absolute;
+  top: 16px; right: 16px;
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.1);
+  color: rgba(255,255,255,0.9);
+  font-size: 13px;
+  z-index: 3;
+  transition: all 0.2s;
+}
+.modal-close:hover { background: var(--gold); color: var(--ink-deep); }
+
+.modal-side {
+  background: linear-gradient(180deg, var(--ink) 0%, var(--ink-deep) 100%);
+  color: #fff;
+  padding: 48px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 32px;
+  position: relative;
+  overflow: hidden;
+}
+.modal-side::before {
+  content: "";
+  position: absolute;
+  top: -100px; right: -100px;
+  width: 300px; height: 300px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(184,134,11,0.3), transparent 60%);
+}
+
+.modal-mark {
+  font-family: var(--serif);
+  font-size: 28px;
+  letter-spacing: 0.06em;
+  font-weight: 300;
+}
+.modal-mark em { color: var(--gold); font-style: italic; }
+
+.modal-eyebrow {
+  font-size: 10px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+.modal-title {
+  font-family: var(--serif);
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 1.05;
+  margin-bottom: 16px;
+  letter-spacing: -0.01em;
+}
+.modal-sub {
+  font-size: 14px;
+  line-height: 1.55;
+  color: rgba(255,255,255,0.7);
+}
+
+.modal-meta {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 20px;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: rgba(255,255,255,0.55);
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+}
+.modal-meta .row { display: flex; justify-content: space-between; gap: 12px; }
+.modal-meta .v { color: var(--gold); font-family: var(--mono); }
+
+.modal-form-wrap {
+  padding: 48px 40px;
+  background: var(--paper);
+  overflow-y: auto;
+}
+
+.modal-form { display: flex; flex-direction: column; gap: 16px; }
+.modal-form .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.modal-form label { display: flex; flex-direction: column; gap: 6px; }
+.modal-form label span {
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(11,31,46,0.55);
+  font-weight: 600;
+}
+.modal-form input, .modal-form textarea, .modal-form select {
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  background: #fff;
+  font: inherit;
+  font-size: 14px;
+  color: var(--ink);
+  border-radius: 2px;
+  transition: all 0.2s;
+}
+.modal-form input:focus, .modal-form textarea:focus, .modal-form select:focus {
+  outline: none;
+  border-color: var(--ink);
+  box-shadow: inset 3px 0 0 var(--gold);
+}
+
+.form-cta { display: grid; grid-template-columns: 1fr 1.4fr; gap: 12px; margin-top: 10px; }
+.form-note {
+  font-size: 11px;
+  color: rgba(11,31,46,0.5);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.modal-sent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  min-height: 360px;
+  text-align: center;
+  gap: 24px;
+}
+.modal-check {
+  color: var(--emerald);
+  animation: pop 0.4s ease;
+}
+.check-path {
+  stroke-dasharray: 50;
+  stroke-dashoffset: 50;
+  animation: drawCheck 0.6s 0.2s ease forwards;
+}
+@keyframes drawCheck { to { stroke-dashoffset: 0; } }
+@keyframes pop { from { transform: scale(0.6); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+
+.modal-confirm {
+  font-family: var(--serif);
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.3;
+  max-width: 360px;
+  color: var(--ink);
+}
+.modal-ref {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  color: var(--gold);
+}
+
+@media (max-width: 760px) {
+  .modal-shell { grid-template-columns: 1fr; max-height: 96vh; }
+  .modal-side { padding: 32px 24px; gap: 20px; }
+  .modal-form-wrap { padding: 32px 24px; }
+  .modal-form .form-row, .form-cta { grid-template-columns: 1fr; }
+  .modal-title { font-size: 28px; }
+}
+
+/* ====================================================================
+   v3 — Hero Dossier + extra fluid motion
+   ==================================================================== */
+
+.hero-grid {
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+}
+
+.hero-dossier-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  z-index: 2;
+}
+
+.dossier {
+  width: 100%;
+  max-width: 520px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.025) 0%, rgba(255,255,255,0.015) 100%);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 6px;
+  padding: 28px 28px 24px;
+  backdrop-filter: blur(8px) saturate(1.2);
+  -webkit-backdrop-filter: blur(8px) saturate(1.2);
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  position: relative;
+  overflow: hidden;
+  animation: dossierIn 1.2s 0.4s cubic-bezier(0.2, 0.8, 0.2, 1) backwards;
+  box-shadow: 0 40px 80px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.06);
+}
+
+@keyframes dossierIn {
+  0% { opacity: 0; transform: translateY(24px) scale(0.98); filter: blur(8px); }
+  100% { opacity: 1; transform: translateY(0) scale(1); filter: blur(0); }
+}
+
+.dossier::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  animation: scanline 5s ease-in-out infinite;
+}
+@keyframes scanline {
+  0% { transform: translateY(0); opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { transform: translateY(380px); opacity: 0; }
+}
+
+.dossier-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.dossier-stamp {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.55);
+}
+.dossier-stamp .stamp-num {
+  color: var(--gold);
+  margin-top: 4px;
+  font-size: 11px;
+  letter-spacing: 0.28em;
+}
+
+.dossier-live {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.24em;
+  color: rgba(255,255,255,0.55);
+  text-transform: uppercase;
+}
+.dossier-live .pulse {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: #4ade80;
+  box-shadow: 0 0 8px #4ade80;
+  animation: livePulse 1.6s ease-in-out infinite;
+}
+@keyframes livePulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.4); opacity: 0.6; }
+}
+
+.dossier-block { display: flex; flex-direction: column; gap: 10px; }
+
+.dossier-label {
+  font-size: 10px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.45);
+  font-weight: 600;
+}
+
+/* Ticker — rotating editions list */
+.ticker {
+  position: relative;
+  height: 28px;
+  overflow: hidden;
+}
+.ticker-row {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-columns: 92px 1fr auto;
+  align-items: center;
+  gap: 14px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.ticker-row.on {
+  opacity: 1;
+  transform: translateY(0);
+}
+.ticker .t-code {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  color: var(--gold);
+}
+.ticker .t-name {
+  font-family: var(--serif);
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1;
+}
+.ticker .t-cat {
+  font-size: 9px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.5);
+  padding: 4px 8px;
+  border: 1px solid rgba(255,255,255,0.18);
+  border-radius: 999px;
+}
+
+/* Mineral analysis bars */
+.mineral-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+.mineral-row {
+  opacity: 0;
+  transform: translateY(8px);
+  animation: minIn 0.6s ease forwards;
+}
+@keyframes minIn { to { opacity: 1; transform: translateY(0); } }
+
+.m-head {
+  display: grid;
+  grid-template-columns: 56px 1fr auto;
+  align-items: baseline;
+  gap: 12px;
+  font-size: 12px;
+  color: rgba(255,255,255,0.85);
+  margin-bottom: 4px;
+}
+.m-sym {
+  font-family: var(--serif);
+  font-style: italic;
+  color: var(--gold);
+  font-size: 14px;
+}
+.m-name {
+  color: rgba(255,255,255,0.6);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.m-val {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: #fff;
+  letter-spacing: 0.04em;
+}
+.m-val small {
+  color: rgba(255,255,255,0.45);
+  margin-left: 4px;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+}
+
+.m-bar {
+  height: 2px;
+  background: rgba(255,255,255,0.06);
+  position: relative;
+  overflow: hidden;
+}
+.m-fill {
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 0;
+  background: linear-gradient(90deg, var(--gold), rgba(225,245,238,0.7));
+  animation: barFill 1.4s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+@keyframes barFill {
+  from { width: 0; }
+  to { width: var(--w); }
+}
+
+.mineral-foot {
+  font-size: 11px;
+  color: rgba(255,255,255,0.45);
+  line-height: 1.5;
+  padding-top: 4px;
+  border-top: 1px dashed rgba(255,255,255,0.1);
+  margin-top: 6px;
+}
+
+/* Countdown */
+.dossier-foot {
+  padding-top: 16px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+.cd-label {
+  font-size: 10px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.5);
+  margin-bottom: 10px;
+}
+.cd-grid {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  font-family: var(--serif);
+}
+.cd-u {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 56px;
+  padding: 8px 4px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 2px;
+}
+.cd-u span {
+  font-size: 28px;
+  font-weight: 300;
+  letter-spacing: 0.04em;
+  color: #fff;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+.cd-u small {
+  margin-top: 4px;
+  font-family: var(--sans);
+  font-size: 9px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+.cd-sep {
+  font-family: var(--mono);
+  color: rgba(255,255,255,0.3);
+  font-size: 22px;
+  align-self: center;
+  padding-bottom: 16px;
+}
+
+@media (max-width: 1000px) {
+  .hero-grid { grid-template-columns: 1fr; gap: 48px; padding-top: 120px; }
+  .hero-dossier-wrap { justify-content: center; }
+  .dossier { max-width: none; }
+  .cd-u { min-width: 48px; }
+  .cd-u span { font-size: 24px; }
+}
+
+/* Refined gamme price area */
+.gamme .price {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.price-tag {
+  font-family: var(--serif);
+  font-size: 18px;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--gold);
+  line-height: 1;
+}
+.gamme .price small {
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  color: rgba(255,255,255,0.45);
+  text-transform: uppercase;
+}
+
+/* Smoother global section reveal */
+.reveal {
+  transition: opacity 1.1s cubic-bezier(0.2, 0.7, 0.2, 1), transform 1.1s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+/* Marquee glide */
+.niger-marquee {
+  animation: marqueeGlide 30s linear infinite;
+}
+@keyframes marqueeGlide {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-30%); }
+}
+
+/* Section head underline draw */
+.section-head h2 {
+  position: relative;
+}
+.section-head h2::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1px;
+  background: var(--gold);
+  margin-top: 24px;
+  transition: width 1.2s 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.reveal.in .section-head h2::after,
+section .section-head h2.in::after { width: 80px; }
+
+/* Better stat number entrance */
+.stat .num { animation: numFloat 1.4s ease backwards; }
+.stat:nth-child(1) .num { animation-delay: 0.1s; }
+.stat:nth-child(2) .num { animation-delay: 0.2s; }
+.stat:nth-child(3) .num { animation-delay: 0.3s; }
+.stat:nth-child(4) .num { animation-delay: 0.4s; }
+@keyframes numFloat {
+  from { opacity: 0; transform: translateY(16px); letter-spacing: 0.04em; }
+  to   { opacity: 1; transform: translateY(0); letter-spacing: -0.02em; }
+}
+
+/* Chapter row hover */
+.chapter {
+  transition: background 0.3s ease, padding 0.3s ease;
+  cursor: default;
+}
+.chapter:hover {
+  background: rgba(255,255,255,0.02);
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.chapter .num {
+  transition: color 0.3s, letter-spacing 0.3s;
+}
+.chapter:hover .num {
+  color: #fff;
+  letter-spacing: 0.32em;
+}
+
+/* Smooth tab indicator */
+.inst-tab {
+  position: relative;
+}
+.inst-tab::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: var(--gold);
+  transition: width 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), left 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.inst-tab:hover::before { width: 80%; left: 10%; }
+
+/* CTA button shimmer */
+.btn-pill.gold {
+  position: relative;
+  overflow: hidden;
+}
+.btn-pill.gold::before {
+  content: "";
+  position: absolute;
+  top: 0; left: -100%;
+  width: 60%; height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+  transition: left 0.6s ease;
+}
+.btn-pill.gold:hover::before { left: 120%; }
+
+/* ====================================================================
+   v4 — Territoire map + luxe motion
+   ==================================================================== */
+
+.niger { background: #050b14; color: #fff; }
+.niger .section-head h2 { color: #fff; }
+.niger .section-head .right { color: rgba(255,255,255,0.6); }
+.niger-marquee {
+  color: rgba(255,255,255,0.85);
+  opacity: 0.85;
+  font-size: clamp(64px, 10vw, 140px);
+}
+.niger-marquee em { color: var(--gold); }
+
+.territoire {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 32px;
+  margin-top: 32px;
+}
+
+/* ---- Map ---- */
+.terr-map {
+  position: relative;
+  aspect-ratio: 16 / 11;
+  background:
+    radial-gradient(ellipse at 40% 50%, rgba(184,134,11,0.07), transparent 60%),
+    linear-gradient(180deg, #061320 0%, #03080f 100%);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.terr-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+  background-size: 8.33% 9.09%;
+  animation: gridDrift 22s linear infinite;
+}
+@keyframes gridDrift {
+  0% { background-position: 0 0; }
+  100% { background-position: 50px 50px; }
+}
+
+.terr-axis-y, .terr-axis-x {
+  position: absolute;
+  background: linear-gradient(var(--gold), transparent);
+  opacity: 0.2;
+}
+.terr-axis-y { left: 18%; top: 0; bottom: 0; width: 1px; }
+.terr-axis-x { left: 0; right: 0; top: 60%; height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(184,134,11,0.4), transparent);
+}
+
+.terr-corner {
+  position: absolute;
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.24em;
+  color: rgba(255,255,255,0.4);
+  padding: 6px 10px;
+}
+.terr-corner.tl { top: 10px; left: 10px; }
+.terr-corner.tr { top: 10px; right: 10px; }
+.terr-corner.bl { bottom: 10px; left: 10px; }
+.terr-corner.br { bottom: 10px; right: 10px; color: var(--gold); }
+
+.terr-svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.src-halo {
+  animation: srcHalo 3s ease-in-out infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+@keyframes srcHalo {
+  0%, 100% { opacity: 0.5; transform: scale(0.8); }
+  50% { opacity: 1; transform: scale(1.4); }
+}
+
+.terr-node {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  z-index: 3;
+  color: #fff;
+}
+
+.terr-node .dot {
+  display: block;
+  width: 10px; height: 10px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 12px rgba(255,255,255,0.4);
+  transition: all 0.3s;
+}
+.terr-node.source .dot {
+  width: 16px; height: 16px;
+  background: var(--gold);
+  box-shadow: 0 0 20px var(--gold), 0 0 40px rgba(184,134,11,0.4);
+}
+.terr-node.hub .dot {
+  background: var(--emerald-2);
+  box-shadow: 0 0 16px rgba(15,110,86,0.6);
+}
+
+.terr-node .ring, .terr-node .ring.r2 {
+  position: absolute;
+  inset: -8px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.3);
+  opacity: 0;
+}
+.terr-node.active .ring {
+  opacity: 1;
+  animation: nodePulse 2s ease-out infinite;
+}
+.terr-node.source .ring { border-color: var(--gold); animation: nodePulse 2s ease-out infinite; opacity: 1; }
+.terr-node.source .ring.r2 { animation-delay: 1s; opacity: 1; }
+
+@keyframes nodePulse {
+  0% { transform: scale(0.6); opacity: 0.8; }
+  100% { transform: scale(2.4); opacity: 0; }
+}
+
+.terr-node:hover .dot { transform: scale(1.3); }
+
+.terr-node .lbl {
+  position: absolute;
+  top: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #fff;
+  white-space: nowrap;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.8);
+  transition: color 0.25s;
+}
+.terr-node.active .lbl, .terr-node:hover .lbl { color: var(--gold); }
+
+.terr-node .tag {
+  position: absolute;
+  bottom: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--mono);
+  font-size: 8px;
+  letter-spacing: 0.28em;
+  color: var(--gold);
+  background: rgba(0,0,0,0.5);
+  padding: 3px 6px;
+  border: 1px solid rgba(184,134,11,0.4);
+  white-space: nowrap;
+}
+
+.terr-legend {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 22px;
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 999px;
+  padding: 8px 18px;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.75);
+}
+.terr-legend > div { display: flex; align-items: center; gap: 8px; }
+.lg-dot { width: 8px; height: 8px; border-radius: 50%; }
+.lg-dot.src { background: var(--gold); box-shadow: 0 0 8px var(--gold); }
+.lg-dot.hub { background: var(--emerald-2); box-shadow: 0 0 8px rgba(15,110,86,0.6); }
+.lg-dot.node { background: #fff; box-shadow: 0 0 6px rgba(255,255,255,0.4); }
+
+/* ---- Side panel ---- */
+
+.terr-panel {
+  background: linear-gradient(180deg, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.015) 100%);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 6px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+  overflow: hidden;
+}
+.terr-panel::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+
+.tp-stamp {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.24em;
+  color: rgba(255,255,255,0.5);
+  text-transform: uppercase;
+}
+.tp-stamp .tp-code { color: var(--gold); }
+
+.tp-body { animation: bodyIn 0.5s ease; }
+@keyframes bodyIn {
+  from { opacity: 0; transform: translateX(8px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+.tp-role {
+  font-size: 10px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+.tp-name {
+  font-family: var(--serif);
+  font-weight: 300;
+  font-size: 44px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  margin-bottom: 6px;
+}
+.tp-stat {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 18px;
+  color: rgba(225,245,238,0.7);
+  margin-bottom: 18px;
+}
+.tp-note {
+  font-size: 13px;
+  line-height: 1.55;
+  color: rgba(255,255,255,0.7);
+  padding-bottom: 18px;
+  border-bottom: 1px dashed rgba(255,255,255,0.1);
+}
+
+.tp-coords {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
+  padding-top: 12px;
+}
+.tp-coords > div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+.tp-coords > div > span:first-child {
+  color: rgba(255,255,255,0.4);
+  font-size: 9px;
+}
+.tp-coords .v {
+  font-family: var(--mono);
+  color: #fff;
+  font-size: 13px;
+}
+.tp-coords .v.live {
+  color: #4ade80;
+  display: flex; align-items: center; gap: 6px;
+}
+.tp-coords .v.live::before {
+  content: "";
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: #4ade80;
+  box-shadow: 0 0 6px #4ade80;
+  animation: livePulse 1.6s ease-in-out infinite;
+  display: inline-block;
+}
+
+.tp-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: auto;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+.tp-pill {
+  font-size: 11px;
+  padding: 6px 12px;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 999px;
+  color: rgba(255,255,255,0.7);
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.tp-pill .i {
+  font-family: var(--mono);
+  font-size: 9px;
+  color: var(--gold);
+  letter-spacing: 0.1em;
+}
+.tp-pill:hover { color: #fff; border-color: rgba(255,255,255,0.3); }
+.tp-pill.on {
+  background: var(--gold);
+  color: var(--ink-deep);
+  border-color: var(--gold);
+}
+.tp-pill.on .i { color: var(--ink-deep); }
+
+@media (max-width: 1100px) {
+  .territoire { grid-template-columns: 1fr; }
+  .terr-map { aspect-ratio: 16 / 12; }
+  .tp-name { font-size: 32px; }
+}
+
+/* Stat bands at bottom of section */
+.terr-bands {
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.band {
+  background: #050b14;
+  padding: 32px 28px;
+  transition: background 0.4s ease;
+  cursor: default;
+}
+.band:hover { background: #0a1828; }
+.band-num {
+  font-family: var(--serif);
+  font-weight: 300;
+  font-size: 64px;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  color: var(--gold);
+}
+.band-num sup { font-size: 18px; color: rgba(255,255,255,0.55); margin-left: 4px; }
+.band-lab {
+  margin-top: 10px;
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #fff;
+}
+.band-sub {
+  margin-top: 8px;
+  font-size: 13px;
+  color: rgba(255,255,255,0.55);
+  line-height: 1.5;
+}
+
+@media (max-width: 880px) {
+  .terr-bands { grid-template-columns: 1fr; }
+  .band-num { font-size: 48px; }
+}
+
+/* ---- Luxe motion extras ---- */
+
+/* Soft trailing glow that follows the cursor inside a section */
+.luxe-glow {
+  position: relative;
+  isolation: isolate;
+}
+.luxe-glow::after {
+  content: "";
+  position: absolute;
+  inset: -10%;
+  background: radial-gradient(circle at var(--mx, 50%) var(--my, 50%), rgba(184,134,11,0.08), transparent 30%);
+  pointer-events: none;
+  z-index: -1;
+  transition: opacity 0.4s;
+}
+
+/* Smooth float reveal on .reveal entries */
+@keyframes lift {
+  from { transform: translateY(48px); opacity: 0; filter: blur(6px); }
+  to   { transform: translateY(0); opacity: 1; filter: blur(0); }
+}
+
+/* Make chapter rows entrance staggered */
+.chapter.reveal { transition-delay: calc(var(--idx, 0) * 100ms); }
+
+/* Trust stat number entrance shimmer */
+.trust-stat .num {
+  background: linear-gradient(180deg, var(--gold), #f4d385);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+}
+
+/* Subtle hue rotation on partner hover */
+.partner {
+  position: relative;
+}
+.partner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(184,134,11,0.0), rgba(184,134,11,0.12));
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+.partner:hover::after { opacity: 1; }
+
+/* Smoother card glare reset */
+.gamme, .poster { transition: transform 0.5s cubic-bezier(0.2, 0.7, 0.2, 1); }
+
+/* Loader logo: slight breathing */
+.loader .mark { animation: fadeUp 1.2s 0.2s ease forwards, breathe 4s 1.4s ease-in-out infinite; }
+@keyframes breathe {
+  0%, 100% { letter-spacing: 0.12em; }
+  50% { letter-spacing: 0.16em; }
+}
+
+/* Nav scroll polish — gold underline trace */
+.nav ul a { position: relative; }
+.nav ul a::after {
+  content: "";
+  position: absolute;
+  left: 0; bottom: -6px;
+  width: 0; height: 1px;
+  background: var(--gold);
+  transition: width 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.nav ul a:hover::after { width: 100%; }
+
+/* Concierge button bigger gold ring */
+.concierge-btn { transition: transform 0.3s, box-shadow 0.3s; }
+.concierge-btn:hover { box-shadow: 0 24px 50px rgba(184,134,11,0.35); }
+
+/* Loading overlay ---------------------------------------------------- */
+
+.loader {
+  position: fixed;
+  inset: 0;
+  background: #03080f;
+  color: #fff;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 24px;
+  transition: opacity 0.8s ease, visibility 0.8s ease;
+}
+.loader.gone { opacity: 0; visibility: hidden; pointer-events: none; }
+
+.loader .mark {
+  font-family: var(--serif);
+  font-weight: 300;
+  font-size: 56px;
+  letter-spacing: 0.12em;
+  position: relative;
+  opacity: 0;
+  animation: fadeUp 1.2s 0.2s ease forwards;
+}
+.loader .mark em { color: var(--gold); font-style: italic; }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.loader .progress {
+  width: 200px;
+  height: 1px;
+  background: rgba(255,255,255,0.1);
+  position: relative;
+  overflow: hidden;
+}
+.loader .progress::after {
+  content: "";
+  position: absolute;
+  left: 0; top: 0; height: 100%;
+  width: 0%;
+  background: var(--gold);
+  animation: load 2s 0.4s ease-out forwards;
+}
+@keyframes load { to { width: 100%; } }
+
+.loader .sub {
+  font-size: 10px;
+  letter-spacing: 0.36em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.4);
+  opacity: 0;
+  animation: fadeUp 1s 0.6s ease forwards;
+}
+
+
+/* ====================================================================
+   LiptakoBot — Interactive robot widget (21st.dev style)
+   ==================================================================== */
+
+.lbot-wrap {
+  position: fixed;
+  bottom: 88px;
+  right: 24px;
+  z-index: 91;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  pointer-events: none;
+}
+
+/* Speech bubble */
+.lbot-bubble {
+  max-width: 220px;
+  padding: 12px 16px;
+  background: var(--ink);
+  border: 1px solid rgba(184,134,11,0.35);
+  border-radius: 12px 12px 4px 12px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: rgba(255,255,255,0.88);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+  pointer-events: auto;
+  transform-origin: bottom right;
+  animation: bubblePop 0.35s cubic-bezier(0.2,0.8,0.2,1);
+  position: relative;
+}
+.lbot-bubble em { color: var(--gold); font-style: italic; }
+.lbot-bubble .lbot-bubble-dot {
+  position: absolute;
+  bottom: -6px; right: 16px;
+  width: 10px; height: 10px;
+  background: var(--ink);
+  border-right: 1px solid rgba(184,134,11,0.35);
+  border-bottom: 1px solid rgba(184,134,11,0.35);
+  transform: rotate(45deg);
+}
+@keyframes bubblePop {
+  from { opacity:0; transform: scale(0.85) translateY(8px); }
+  to   { opacity:1; transform: scale(1) translateY(0); }
+}
+
+/* Robot container */
+.lbot {
+  pointer-events: auto;
+  cursor: pointer;
+  width: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  filter: drop-shadow(0 8px 24px rgba(0,0,0,0.5));
+  transition: transform 0.3s cubic-bezier(0.2,0.8,0.2,1);
+  transform-origin: bottom center;
+}
+.lbot:hover { transform: translateY(-4px) scale(1.04); }
+.lbot.wave  { animation: botWave 0.6s ease; }
+@keyframes botWave {
+  0%,100%  { transform: translateY(0) rotate(0deg); }
+  25%      { transform: translateY(-6px) rotate(-4deg); }
+  75%      { transform: translateY(-4px) rotate(3deg); }
+}
+.lbot.excited { animation: botBounce 0.5s ease; }
+@keyframes botBounce {
+  0%,100% { transform: translateY(0) scaleY(1); }
+  40%     { transform: translateY(-10px) scaleY(1.05); }
+  70%     { transform: translateY(-3px) scaleY(0.97); }
+}
+
+/* Antenna */
+.lbot-antenna {
+  width: 3px; height: 14px;
+  background: linear-gradient(to top, var(--gold), #d4a84a);
+  border-radius: 2px;
+  margin-bottom: -1px;
+  position: relative;
+}
+.lbot-antenna::after {
+  content: "";
+  position: absolute;
+  top: -5px; left: 50%;
+  transform: translateX(-50%);
+  width: 9px; height: 9px;
+  border-radius: 50%;
+  background: var(--gold);
+  box-shadow: 0 0 8px var(--gold), 0 0 16px rgba(184,134,11,0.6);
+  animation: antennaPulse 2.2s ease-in-out infinite;
+}
+@keyframes antennaPulse {
+  0%,100% { box-shadow: 0 0 6px var(--gold), 0 0 12px rgba(184,134,11,0.5); transform: translateX(-50%) scale(1); }
+  50%     { box-shadow: 0 0 14px var(--gold), 0 0 28px rgba(184,134,11,0.8); transform: translateX(-50%) scale(1.25); }
+}
+
+/* Head */
+.lbot-head {
+  width: 56px; height: 46px;
+  background: linear-gradient(160deg, #1a3550 0%, #0d2238 60%, #081726 100%);
+  border: 1.5px solid rgba(184,134,11,0.45);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  position: relative;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.06);
+  overflow: visible;
+}
+
+/* Ears */
+.lbot-head::before,
+.lbot-head::after {
+  content: "";
+  position: absolute;
+  top: 50%; transform: translateY(-50%);
+  width: 6px; height: 18px;
+  background: linear-gradient(180deg, #1a3550, #0d2238);
+  border: 1.5px solid rgba(184,134,11,0.3);
+  border-radius: 3px;
+}
+.lbot-head::before { left: -7px; }
+.lbot-head::after  { right: -7px; }
+
+/* Eyes */
+.lbot-eye {
+  width: 18px; height: 18px;
+  background: linear-gradient(180deg, #0a1f30, #050b14);
+  border-radius: 50%;
+  border: 1.5px solid rgba(184,134,11,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 8px rgba(184,134,11,0.2) inset;
+}
+.lbot-eye .lbot-pupil {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #4fc3f7, #0288d1);
+  box-shadow: 0 0 6px rgba(79,195,247,0.8);
+  position: absolute;
+  transition: transform 0.08s linear;
+  will-change: transform;
+}
+.lbot-eye .lbot-shine {
+  position: absolute;
+  top: 3px; left: 4px;
+  width: 4px; height: 4px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.85);
+  pointer-events: none;
+}
+
+/* Blink animation */
+.lbot-eye.blink { animation: eyeBlink 0.15s ease; }
+@keyframes eyeBlink {
+  0%,100% { transform: scaleY(1); }
+  50%     { transform: scaleY(0.08); }
+}
+
+/* Mouth / LED strip */
+.lbot-mouth {
+  position: absolute;
+  bottom: 8px;
+  left: 50%; transform: translateX(-50%);
+  width: 24px; height: 4px;
+  background: rgba(0,0,0,0.4);
+  border-radius: 2px;
+  overflow: hidden;
+  border: 1px solid rgba(184,134,11,0.2);
+}
+.lbot-mouth-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--gold), #4fc3f7, var(--gold));
+  background-size: 200% 100%;
+  border-radius: 2px;
+  animation: mouthGlow 2s linear infinite;
+  width: 0%;
+  transition: width 0.4s ease;
+}
+@keyframes mouthGlow {
+  0%   { background-position: 0% 0%; }
+  100% { background-position: 200% 0%; }
+}
+.lbot:hover .lbot-mouth-fill,
+.lbot.talking .lbot-mouth-fill { width: 100%; }
+
+/* Neck */
+.lbot-neck {
+  width: 16px; height: 6px;
+  background: linear-gradient(180deg, #0d2238, #081726);
+  border-left: 1.5px solid rgba(184,134,11,0.3);
+  border-right: 1.5px solid rgba(184,134,11,0.3);
+}
+
+/* Body */
+.lbot-body {
+  width: 56px; height: 40px;
+  background: linear-gradient(160deg, #1a3550 0%, #0d2238 60%, #081726 100%);
+  border: 1.5px solid rgba(184,134,11,0.4);
+  border-radius: 10px 10px 8px 8px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.05);
+}
+
+/* Chest panel */
+.lbot-chest {
+  width: 28px; height: 18px;
+  background: rgba(0,0,0,0.4);
+  border-radius: 4px;
+  border: 1px solid rgba(184,134,11,0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+.lbot-led {
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  animation: ledCycle 3s ease-in-out infinite;
+}
+.lbot-led:nth-child(1) { background: var(--gold);     box-shadow: 0 0 4px var(--gold);     animation-delay: 0s; }
+.lbot-led:nth-child(2) { background: #4fc3f7;          box-shadow: 0 0 4px #4fc3f7;          animation-delay: 0.5s; }
+.lbot-led:nth-child(3) { background: #4ade80;          box-shadow: 0 0 4px #4ade80;          animation-delay: 1s; }
+@keyframes ledCycle {
+  0%,100%  { opacity: 1; transform: scale(1); }
+  50%      { opacity: 0.3; transform: scale(0.7); }
+}
+
+/* Arms */
+.lbot-arms {
+  position: absolute;
+  top: 4px;
+  left: -10px; right: -10px;
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none;
+}
+.lbot-arm {
+  width: 8px; height: 26px;
+  background: linear-gradient(180deg, #1a3550, #081726);
+  border: 1.5px solid rgba(184,134,11,0.3);
+  border-radius: 4px;
+}
+.lbot-arm.left  { transform-origin: top center; animation: armSwayL 4s ease-in-out infinite; }
+.lbot-arm.right { transform-origin: top center; animation: armSwayR 4s ease-in-out infinite; }
+@keyframes armSwayL {
+  0%,100% { transform: rotate(-4deg); }
+  50%     { transform: rotate(4deg); }
+}
+@keyframes armSwayR {
+  0%,100% { transform: rotate(4deg); }
+  50%     { transform: rotate(-4deg); }
+}
+.lbot:hover .lbot-arm.left  { animation: armWaveL 0.5s ease infinite; }
+.lbot:hover .lbot-arm.right { animation: armWaveR 0.5s ease infinite; }
+@keyframes armWaveL { 0%,100%{transform:rotate(-20deg)} 50%{transform:rotate(10deg)} }
+@keyframes armWaveR { 0%,100%{transform:rotate(20deg)}  50%{transform:rotate(-10deg)} }
+
+/* Legs */
+.lbot-legs {
+  display: flex;
+  gap: 8px;
+  margin-top: -2px;
+}
+.lbot-leg {
+  width: 14px; height: 12px;
+  background: linear-gradient(180deg, #0d2238, #050b14);
+  border: 1.5px solid rgba(184,134,11,0.3);
+  border-radius: 0 0 5px 5px;
+  animation: legBob 2s ease-in-out infinite;
+}
+.lbot-leg:nth-child(2) { animation-delay: 0.3s; }
+@keyframes legBob {
+  0%,100% { transform: translateY(0); }
+  50%     { transform: translateY(2px); }
+}
+
+/* ====================================================================
+   SearchK — Cmd+K command palette
+   ==================================================================== */
+
+.sk-trigger {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.18);
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  color: rgba(255,255,255,0.65);
+  background: rgba(255,255,255,0.05);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  backdrop-filter: blur(6px);
+}
+.nav.scrolled .sk-trigger {
+  border-color: var(--line);
+  color: rgba(11,31,46,0.55);
+  background: rgba(11,31,46,0.04);
+}
+.sk-trigger:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+  background: rgba(184,134,11,0.06);
+}
+.sk-trigger .sk-icon {
+  width: 14px; height: 14px;
+  opacity: 0.7;
+}
+.sk-trigger kbd {
+  font-family: var(--mono);
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.14);
+  letter-spacing: 0.08em;
+}
+.nav.scrolled .sk-trigger kbd {
+  background: rgba(11,31,46,0.06);
+  border-color: var(--line);
+}
+
+.sk-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(3,8,15,0.75);
+  backdrop-filter: blur(20px) saturate(1.3);
+  -webkit-backdrop-filter: blur(20px) saturate(1.3);
+  z-index: 400;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 12vh 24px 24px;
+  animation: skFadeIn 0.18s ease;
+}
+@keyframes skFadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.sk-shell {
+  width: 100%;
+  max-width: 640px;
+  background: linear-gradient(180deg, rgba(11,25,40,0.98) 0%, rgba(6,15,26,0.99) 100%);
+  border: 1px solid rgba(255,255,255,0.10);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow:
+    0 40px 80px rgba(0,0,0,0.6),
+    0 0 0 1px rgba(184,134,11,0.08),
+    inset 0 1px 0 rgba(255,255,255,0.06);
+  animation: skSlideIn 0.22s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+@keyframes skSlideIn {
+  from { opacity: 0; transform: translateY(-12px) scale(0.97); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.sk-input-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 18px 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+}
+.sk-input-row svg {
+  flex-shrink: 0;
+  color: rgba(255,255,255,0.4);
+}
+.sk-input-row input {
+  flex: 1;
+  background: none;
+  border: none;
+  outline: none;
+  font-family: var(--sans);
+  font-size: 17px;
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: 0.01em;
+}
+.sk-input-row input::placeholder {
+  color: rgba(255,255,255,0.3);
+}
+.sk-esc {
+  font-family: var(--mono);
+  font-size: 10px;
+  padding: 3px 8px;
+  border-radius: 4px;
+  border: 1px solid rgba(255,255,255,0.12);
+  color: rgba(255,255,255,0.35);
+  background: rgba(255,255,255,0.04);
+  flex-shrink: 0;
+}
+
+.sk-body {
+  max-height: 400px;
+  overflow-y: auto;
+  padding: 8px 0;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(184,134,11,0.3) transparent;
+}
+.sk-body::-webkit-scrollbar { width: 4px; }
+.sk-body::-webkit-scrollbar-track { background: transparent; }
+.sk-body::-webkit-scrollbar-thumb { background: rgba(184,134,11,0.3); border-radius: 2px; }
+
+.sk-group-label {
+  padding: 10px 20px 6px;
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.3);
+  font-weight: 600;
+}
+
+.sk-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 11px 20px;
+  cursor: pointer;
+  transition: background 0.12s ease;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  color: #fff;
+  font: inherit;
+}
+.sk-item:hover, .sk-item.focused {
+  background: rgba(255,255,255,0.05);
+}
+.sk-item.focused { background: rgba(184,134,11,0.08); }
+
+.sk-item-icon {
+  width: 34px; height: 34px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 14px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+.sk-item-icon.gold { background: rgba(184,134,11,0.15); border-color: rgba(184,134,11,0.25); }
+.sk-item-icon.emerald { background: rgba(10,92,58,0.2); border-color: rgba(10,92,58,0.3); }
+
+.sk-item-body { flex: 1; min-width: 0; }
+.sk-item-name {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(255,255,255,0.92);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  letter-spacing: 0.01em;
+}
+.sk-item-sub {
+  font-size: 12px;
+  color: rgba(255,255,255,0.4);
+  margin-top: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  letter-spacing: 0.02em;
+}
+
+.sk-item-right {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+.sk-badge {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.2em;
+  padding: 3px 8px;
+  border-radius: 999px;
+  text-transform: uppercase;
+}
+.sk-badge.ministry { background: rgba(184,134,11,0.15); color: var(--gold); border: 1px solid rgba(184,134,11,0.2); }
+.sk-badge.finance  { background: rgba(27,58,92,0.4); color: #7DA9D6; border: 1px solid rgba(125,169,214,0.2); }
+.sk-badge.hotel    { background: rgba(10,92,58,0.25); color: #86C26A; border: 1px solid rgba(134,194,106,0.2); }
+.sk-badge.energy   { background: rgba(14,31,48,0.6); color: #E0B83A; border: 1px solid rgba(224,184,58,0.2); }
+.sk-badge.action   { background: rgba(255,255,255,0.06); color: rgba(255,255,255,0.5); border: 1px solid rgba(255,255,255,0.08); }
+
+.sk-enter-hint {
+  font-family: var(--mono);
+  font-size: 10px;
+  padding: 3px 8px;
+  border-radius: 4px;
+  border: 1px solid rgba(255,255,255,0.1);
+  color: rgba(255,255,255,0.3);
+  background: rgba(255,255,255,0.03);
+}
+
+.sk-footer {
+  padding: 10px 20px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sk-footer-keys {
+  display: flex;
+  gap: 14px;
+  font-family: var(--mono);
+  font-size: 10px;
+  color: rgba(255,255,255,0.3);
+  letter-spacing: 0.1em;
+}
+.sk-footer-keys span { display: flex; align-items: center; gap: 5px; }
+.sk-footer-keys kbd {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 6px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 3px;
+  font-size: 10px;
+}
+.sk-count {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: rgba(255,255,255,0.25);
+  letter-spacing: 0.12em;
+}
+
+.sk-empty {
+  padding: 40px 20px;
+  text-align: center;
+}
+.sk-empty p {
+  font-family: var(--serif);
+  font-size: 20px;
+  font-weight: 300;
+  color: rgba(255,255,255,0.4);
+  font-style: italic;
+}
+.sk-empty small {
+  display: block;
+  margin-top: 8px;
+  font-size: 12px;
+  color: rgba(255,255,255,0.25);
+  letter-spacing: 0.1em;
+}
+
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+
+  <script src="react.js"></script>
+  <script src="react-dom.js"></script>
+  <script src="babel.min.js"></script>
+
+  <script type="text/babel">
+// === data.jsx ===
+
+// Shared data, icons, hooks
+const SECTORS = [
+  {
+    id: "affaires",
+    short: "Affaires Étrangères",
+    long: "Ministère des Affaires Étrangères",
+    motto: "Diplomatie aujourd'hui, partenariats pour demain.",
+    body: "Au service de la voix du Niger dans le concert des nations. Chaque bouteille porte la signature institutionnelle de la République, sur les tables de négociation comme dans les chancelleries.",
+    palette: { bg: "#0d2740", sidebar: "#0b1f33", accent: "#C9A24A", text: "#ffffff", muted: "rgba(255,255,255,0.7)" },
+    pillars: [
+      { t: "Diplomatie", d: "Représenter et défendre les intérêts du Niger." },
+      { t: "Coopération", d: "Bâtir des partenariats mutuellement bénéfiques." },
+      { t: "Ouverture", d: "Promouvoir le Niger sur la scène internationale." },
+      { t: "Excellence", d: "Agir avec professionnalisme et intégrité." }
+    ],
+    img: "assets/bottle-affaires.jpeg",
+    cat: "Ministère",
+    code: "AFF / 50CL"
+  },
+  {
+    id: "defense",
+    short: "Défense",
+    long: "Ministère de la Défense Nationale",
+    motto: "Protéger aujourd'hui pour garantir demain.",
+    body: "L'eau du devoir. Servie aux états-majors, aux casernes officielles et lors des cérémonies de la République. Sobre, exigeante, à l'image de ceux qui servent.",
+    palette: { bg: "#0a1a2e", sidebar: "#081428", accent: "#7DA9D6", text: "#ffffff", muted: "rgba(255,255,255,0.7)" },
+    pillars: [
+      { t: "Sécurité", d: "Assurer la protection du territoire et des citoyens." },
+      { t: "Stratégie", d: "Anticiper et réagir avec efficacité." },
+      { t: "Engagement", d: "Servir la nation avec loyauté." },
+      { t: "Paix", d: "Œuvrer pour la stabilité et la cohésion." }
+    ],
+    img: "assets/bottle-defense.jpeg",
+    cat: "Ministère",
+    code: "DEF / 50CL"
+  },
+  {
+    id: "justice",
+    short: "Justice",
+    long: "Ministère de la Justice",
+    motto: "Réaliser aujourd'hui une justice équitable pour demain.",
+    body: "Au cœur des palais, des audiences et des congrès judiciaires. Une eau qui accompagne la délibération, la rigueur et la confiance publique.",
+    palette: { bg: "#0e2138", sidebar: "#0a1a30", accent: "#C9A24A", text: "#ffffff", muted: "rgba(255,255,255,0.72)" },
+    pillars: [
+      { t: "Équité", d: "Garantir l'égalité de tous devant la loi." },
+      { t: "Intégrité", d: "Agir avec honnêteté et impartialité." },
+      { t: "Confiance", d: "Renforcer le lien entre l'État et les citoyens." },
+      { t: "Droits", d: "Protéger les libertés fondamentales." }
+    ],
+    img: "assets/bottle-justice.jpeg",
+    cat: "Ministère",
+    code: "JUS / 50CL"
+  },
+  {
+    id: "education",
+    short: "Éducation",
+    long: "Ministère de l'Éducation Nationale",
+    motto: "Instruire aujourd'hui pour bâtir demain.",
+    body: "Pour les rentrées solennelles, les jurys d'examen, les conférences pédagogiques. Une eau qui hydrate la nation apprenante.",
+    palette: { bg: "#0a3a22", sidebar: "#082c1a", accent: "#86C26A", text: "#ffffff", muted: "rgba(255,255,255,0.72)" },
+    pillars: [
+      { t: "Éducation", d: "Garantir un accès équitable et de qualité." },
+      { t: "Savoir", d: "Promouvoir la connaissance et l'excellence." },
+      { t: "Égalité", d: "Assurer l'inclusion et l'égalité des chances." },
+      { t: "Innovation", d: "Encourager l'innovation pour l'avenir." }
+    ],
+    img: "assets/bottle-education.jpeg",
+    cat: "Ministère",
+    code: "EDU / 50CL"
+  },
+  {
+    id: "energie",
+    short: "Énergie",
+    long: "Ministère de l'Énergie",
+    motto: "Énergiser aujourd'hui pour un avenir durable.",
+    body: "Présente sur les chantiers, les inaugurations et les forums stratégiques du secteur énergétique. Une eau qui partage la même ambition : durer.",
+    palette: { bg: "#0a1f30", sidebar: "#081726", accent: "#E0B83A", text: "#ffffff", muted: "rgba(255,255,255,0.72)" },
+    pillars: [
+      { t: "Production", d: "Une production énergétique fiable et durable." },
+      { t: "Durabilité", d: "Promouvoir les énergies renouvelables." },
+      { t: "Innovation", d: "Encourager l'innovation énergétique." },
+      { t: "Accès", d: "Rendre l'énergie accessible à tous." }
+    ],
+    img: "assets/bottle-energie.jpeg",
+    cat: "Ministère",
+    code: "ENR / 50CL"
+  },
+  {
+    id: "interieur",
+    short: "Intérieur",
+    long: "Ministère de l'Intérieur",
+    motto: "Assurer aujourd'hui la sécurité de demain.",
+    body: "Au service des préfectures, gouvernorats et forces de la République. Une eau de proximité, partout présente.",
+    palette: { bg: "#0d2a48", sidebar: "#0a2238", accent: "#7DA9D6", text: "#ffffff", muted: "rgba(255,255,255,0.72)" },
+    pillars: [
+      { t: "Sécurité", d: "Protéger les personnes et les biens." },
+      { t: "Proximité", d: "Être à l'écoute des citoyens." },
+      { t: "Cohésion", d: "Renforcer l'unité nationale." },
+      { t: "Équité", d: "Garantir le respect des droits." }
+    ],
+    img: "assets/bottle-interieur.jpeg",
+    cat: "Ministère",
+    code: "INT / 50CL"
+  },
+  {
+    id: "atlantique",
+    short: "Banque Atlantique",
+    long: "Banque Atlantique",
+    motto: "Notre engagement, votre confiance.",
+    body: "Dans les agences premium, les espaces VIP et les comités exécutifs. Une eau partenaire des conversations qui engagent l'avenir financier de la région.",
+    palette: { bg: "#1a1a1a", sidebar: "#0e0e0e", accent: "#F26B1F", text: "#ffffff", muted: "rgba(255,255,255,0.72)" },
+    pillars: [
+      { t: "Sécurité", d: "Transactions protégées, données préservées." },
+      { t: "Performance", d: "Solutions innovantes pour vos ambitions." },
+      { t: "Proximité", d: "À vos côtés, partout où vous allez." },
+      { t: "Responsabilité", d: "Un impact positif pour demain." }
+    ],
+    img: "assets/bottle-atlantique.jpeg",
+    cat: "Finance",
+    code: "ATL / 50CL"
+  },
+  {
+    id: "bia",
+    short: "BIA Niger",
+    long: "Banque Internationale pour l'Afrique au Niger",
+    motto: "Notre expertise, votre réussite.",
+    body: "Une bouteille prisme, taillée comme une signature. Pensée pour les salons d'accueil prestige et les rendez-vous d'investissement.",
+    palette: { bg: "#f4f4f4", sidebar: "#e7e7e7", accent: "#1f3b8b", text: "#0b1f2e", muted: "rgba(11,31,46,0.72)" },
+    pillars: [
+      { t: "Sécurité", d: "Vos transactions entre de bonnes mains." },
+      { t: "Performance", d: "Solutions adaptées à vos ambitions." },
+      { t: "Proximité", d: "À vos côtés, à chaque étape." },
+      { t: "Responsabilité", d: "Agir pour un impact durable." }
+    ],
+    img: "assets/bottle-bia.jpeg",
+    cat: "Finance",
+    code: "BIA / 50CL"
+  },
+  {
+    id: "sonibank",
+    short: "Sonibank",
+    long: "Sonibank",
+    motto: "Notre engagement, votre confiance.",
+    body: "Une eau au quotidien des banquiers de référence. Filets bleus subtils, prisme architectural, signature institutionnelle.",
+    palette: { bg: "#f1f4f8", sidebar: "#e3e8ee", accent: "#1e4b9a", text: "#0b1f2e", muted: "rgba(11,31,46,0.72)" },
+    pillars: [
+      { t: "Sécurité", d: "Standards les plus exigeants." },
+      { t: "Performance", d: "Solutions pour vos projets." },
+      { t: "Proximité", d: "À vos côtés, partout où vous êtes." },
+      { t: "Confiance", d: "Une relation durable." }
+    ],
+    img: "assets/bottle-sonibank.jpeg",
+    cat: "Finance",
+    code: "SNB / 50CL"
+  },
+  {
+    id: "radisson",
+    short: "Radisson Hôtel",
+    long: "Radisson — Niamey",
+    motto: "L'expérience hôtelière dans chaque détail.",
+    body: "Sur les tables de chevet, en chambre VIP, en suite présidentielle. Une eau qui complète l'art du service hôtelier de niveau international.",
+    palette: { bg: "#f7f8fb", sidebar: "#e8eaf1", accent: "#0c2461", text: "#0b1f2e", muted: "rgba(11,31,46,0.72)" },
+    pillars: [
+      { t: "Qualité Premium", d: "Eau de haute qualité pour votre bien-être." },
+      { t: "Excellence", d: "Standards élevés pour une expérience unique." },
+      { t: "Service", d: "Attentif et personnalisé, à tout moment." },
+      { t: "Confiance", d: "Transparence et sécurité au cœur." }
+    ],
+    img: "assets/bottle-radisson.jpeg",
+    cat: "Hôtellerie",
+    code: "RDS / 50CL"
+  },
+  {
+    id: "sonidep",
+    short: "Sonidep",
+    long: "Société Nigérienne des Produits Pétroliers",
+    motto: "L'énergie du Niger, en mouvement.",
+    body: "Sur chaque station, dans chaque dépôt, à bord des camions-citernes. Une eau pour les équipes qui font circuler l'énergie du Niger, conditionnée aux couleurs du leader pétrolier national.",
+    palette: { bg: "#eaf3fb", sidebar: "#d8e8f7", accent: "#1b6ec2", text: "#0b1f2e", muted: "rgba(11,31,46,0.72)" },
+    pillars: [
+      { t: "Approvisionnement", d: "Sécuriser la chaîne pétrolière nationale." },
+      { t: "Qualité", d: "Standards techniques les plus exigeants." },
+      { t: "Proximité", d: "Servir chaque région, chaque station." },
+      { t: "Durabilité", d: "Préparer la transition énergétique du Niger." }
+    ],
+    img: "assets/bottle-sonidep.jpeg",
+    cat: "Énergie · Pétrolier",
+    code: "SND / 50CL"
+  }
+];
+
+const PRODUCT_GAMME = [
+  {
+    name: "Liptako Express",
+    vol: "33cl · pratique",
+    desc: "Format poche pour déplacements officiels, salons et événements brefs.",
+    price: "350",
+    img: "assets/bottle-defense.jpeg",
+    tag: "F-01"
+  },
+  {
+    name: "Liptako Standard",
+    vol: "50cl · usage quotidien",
+    desc: "Le format de référence des conseils, comités et réunions ministérielles.",
+    price: "500",
+    img: "assets/bottle-interieur.jpeg",
+    tag: "F-02"
+  },
+  {
+    name: "Liptako Famille",
+    vol: "1,5L · partage",
+    desc: "Pour tables d'hôtes, séminaires résidentiels et longues sessions de travail.",
+    price: "1 200",
+    img: "assets/bottle-sonidep.jpeg",
+    tag: "F-03"
+  },
+  {
+    name: "Liptako Institutionnel",
+    vol: "50cl · personnalisé",
+    desc: "Étiquetage sur-mesure aux couleurs de votre institution. Tirage minimum 5 000 unités.",
+    price: "Sur devis",
+    img: "assets/bottle-affaires.jpeg",
+    tag: "F-04"
+  },
+  {
+    name: "Liptako Hôtel",
+    vol: "50cl · prisme",
+    desc: "Bouteille architecturale pour chambres, suites et restaurants d'excellence.",
+    price: "Sur devis",
+    img: "assets/bottle-radisson.jpeg",
+    tag: "F-05"
+  },
+  {
+    name: "Liptako Prestige",
+    vol: "75cl · diamant",
+    desc: "Cérémonies d'État, sommets internationaux, événements de gala. Édition numérotée.",
+    price: "Sur devis",
+    img: "assets/bottle-bia.jpeg",
+    tag: "F-06"
+  }
+];
+
+const NIGER_CHAPTERS = [
+  { t: "La source", d: "Captée à plus de 200 mètres dans la nappe aquifère du Liptako-Gourma, à l'abri des contaminations de surface.", code: "01 / SOURCE" },
+  { t: "La pureté", d: "Faiblement minéralisée. Équilibre testé en laboratoire indépendant, conforme aux normes OMS et UEMOA.", code: "02 / ANALYSE" },
+  { t: "La filtration", d: "Sept étapes de filtration, dont une finition à charbon actif et UV. Aucun additif. Aucun traitement chimique.", code: "03 / PROCÉDÉ" },
+  { t: "L'embouteillage", d: "Ligne automatisée, environnement à pression positive. Traçabilité par lot et signature numérique.", code: "04 / USINE" },
+  { t: "La personnalisation", d: "Studio de design intégré. Charte institutionnelle respectée. Étiquettes imprimées en HD, vernis sélectif possible.", code: "05 / ATELIER" },
+  { t: "La livraison VIP", d: "Logistique dédiée, palettisation discrète, livraison aux conditions des protocoles officiels.", code: "06 / SERVICE" }
+];
+
+const FORMATS = [
+  { id: "express", name: "Express", sub: "33 cl · poche", meta: "F-01" },
+  { id: "standard", name: "Standard", sub: "50 cl · classique", meta: "F-02" },
+  { id: "famille", name: "Famille", sub: "1,5 L · partage", meta: "F-03" },
+  { id: "prestige", name: "Prestige", sub: "75 cl · diamant", meta: "F-06" }
+];
+
+const CAP_COLORS = [
+  { id: "navy", name: "Bleu nuit", hex: "#0B1F2E" },
+  { id: "gold", name: "Or royal", hex: "#B8860B" },
+  { id: "emerald", name: "Vert profond", hex: "#0A5C3A" },
+  { id: "silver", name: "Argent", hex: "#C8CCD2" },
+  { id: "white", name: "Blanc pur", hex: "#FFFFFF" },
+  { id: "amber", name: "Ambre", hex: "#D4A84A" },
+  { id: "orange", name: "Orange", hex: "#F26B1F" },
+  { id: "ink", name: "Encre", hex: "#000000" }
+];
+
+const QUANTITIES = [
+  { id: "q1", label: "Échantillon", sub: "100 unités", meta: "ESS" },
+  { id: "q2", label: "Pilote", sub: "5 000 unités", meta: "PIL" },
+  { id: "q3", label: "Série", sub: "25 000 unités", meta: "SER" },
+  { id: "q4", label: "Production", sub: "100 000+ unités", meta: "PRO" }
+];
+
+
+// === interactions.jsx ===
+
+// Cross-cutting interactions: modal bus, tilt, magnetic, scroll progress
+const { useState: uS, useEffect: uE, useRef: uR, useCallback: uC } = React;
+
+// ---- Event bus: any button can open the modal --------------------------
+function openModal(mode = "sample", prefill = {}) {
+  window.dispatchEvent(new CustomEvent("liptako:open-modal", { detail: { mode, prefill } }));
+}
+function closeModal() {
+  window.dispatchEvent(new CustomEvent("liptako:close-modal"));
+}
+
+// ---- 3D tilt hook ------------------------------------------------------
+function useTilt({ max = 10, scale = 1.02, glare = true } = {}) {
+  const ref = uR(null);
+  uE(() => {
+    const el = ref.current;
+    if (!el) return;
+    let raf = 0;
+    let rect = null;
+    const update = () => { rect = el.getBoundingClientRect(); };
+    update();
+    const ro = new ResizeObserver(update);
+    ro.observe(el);
+    window.addEventListener("scroll", update, { passive: true });
+    window.addEventListener("resize", update);
+
+    function onMove(e) {
+      if (!rect) update();
+      const cx = rect.left + rect.width / 2;
+      const cy = rect.top + rect.height / 2;
+      const dx = (e.clientX - cx) / (rect.width / 2);
+      const dy = (e.clientY - cy) / (rect.height / 2);
+      const rx = (-dy * max).toFixed(2);
+      const ry = (dx * max).toFixed(2);
+      cancelAnimationFrame(raf);
+      raf = requestAnimationFrame(() => {
+        el.style.transform = `perspective(1200px) rotateX(${rx}deg) rotateY(${ry}deg) scale(${scale})`;
+        if (glare) {
+          const gx = ((e.clientX - rect.left) / rect.width) * 100;
+          const gy = ((e.clientY - rect.top) / rect.height) * 100;
+          el.style.setProperty("--glare-x", gx + "%");
+          el.style.setProperty("--glare-y", gy + "%");
+          el.style.setProperty("--glare-o", "0.45");
+        }
+      });
+    }
+    function onLeave() {
+      cancelAnimationFrame(raf);
+      el.style.transform = "perspective(1200px) rotateX(0) rotateY(0) scale(1)";
+      el.style.setProperty("--glare-o", "0");
+    }
+    el.addEventListener("mousemove", onMove);
+    el.addEventListener("mouseleave", onLeave);
+    return () => {
+      el.removeEventListener("mousemove", onMove);
+      el.removeEventListener("mouseleave", onLeave);
+      ro.disconnect();
+      window.removeEventListener("scroll", update);
+      window.removeEventListener("resize", update);
+      cancelAnimationFrame(raf);
+    };
+  }, [max, scale, glare]);
+  return ref;
+}
+
+// ---- Magnetic button hook ---------------------------------------------
+function useMagnetic({ strength = 0.35 } = {}) {
+  const ref = uR(null);
+  uE(() => {
+    const el = ref.current;
+    if (!el) return;
+    function onMove(e) {
+      const r = el.getBoundingClientRect();
+      const x = e.clientX - (r.left + r.width / 2);
+      const y = e.clientY - (r.top + r.height / 2);
+      el.style.transform = `translate(${x * strength}px, ${y * strength}px)`;
+    }
+    function onLeave() { el.style.transform = "translate(0,0)"; }
+    el.addEventListener("mousemove", onMove);
+    el.addEventListener("mouseleave", onLeave);
+    return () => {
+      el.removeEventListener("mousemove", onMove);
+      el.removeEventListener("mouseleave", onLeave);
+    };
+  }, [strength]);
+  return ref;
+}
+
+// ---- Cursor parallax (mouse-driven translate)
+function useCursorParallax({ strength = 20 } = {}) {
+  const ref = uR(null);
+  uE(() => {
+    const el = ref.current;
+    if (!el) return;
+    function onMove(e) {
+      const x = (e.clientX / window.innerWidth - 0.5) * strength;
+      const y = (e.clientY / window.innerHeight - 0.5) * strength;
+      el.style.setProperty("--px", x + "px");
+      el.style.setProperty("--py", y + "px");
+    }
+    window.addEventListener("mousemove", onMove);
+    return () => window.removeEventListener("mousemove", onMove);
+  }, [strength]);
+  return ref;
+}
+
+// ---- Scroll progress bar ----------------------------------------------
+function ScrollProgress() {
+  const [p, setP] = uS(0);
+  uE(() => {
+    const onScroll = () => {
+      const h = document.documentElement;
+      const sh = h.scrollHeight - h.clientHeight;
+      setP(sh > 0 ? (h.scrollTop / sh) * 100 : 0);
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+  return (
+    <div className="scroll-progress">
+      <div className="scroll-progress-fill" style={{ width: p + "%" }}></div>
+    </div>
+  );
+}
+
+// ---- Custom dot cursor (subtle gold dot) -------------------------------
+function CursorDot() {
+  const ref = uR(null);
+  const ring = uR(null);
+  uE(() => {
+    if (window.matchMedia("(pointer: coarse)").matches) return;
+    const d = ref.current;
+    const r = ring.current;
+    if (!d || !r) return;
+    let mx = 0, my = 0, rx = 0, ry = 0;
+    function onMove(e) { mx = e.clientX; my = e.clientY; d.style.transform = `translate(${mx}px, ${my}px)`; }
+    let raf;
+    function tick() {
+      rx += (mx - rx) * 0.12;
+      ry += (my - ry) * 0.12;
+      r.style.transform = `translate(${rx}px, ${ry}px)`;
+      raf = requestAnimationFrame(tick);
+    }
+    tick();
+    window.addEventListener("mousemove", onMove);
+    const overEls = document.querySelectorAll("a, button, .swatch, .gamme, .niger-card, .inst-tab");
+    overEls.forEach(el => {
+      el.addEventListener("mouseenter", () => r.classList.add("hover"));
+      el.addEventListener("mouseleave", () => r.classList.remove("hover"));
+    });
+    return () => {
+      window.removeEventListener("mousemove", onMove);
+      cancelAnimationFrame(raf);
+    };
+  }, []);
+  return (
+    <>
+      <div className="cursor-dot" ref={ref}></div>
+      <div className="cursor-ring" ref={ring}></div>
+    </>
+  );
+}
+
+// ---- The Modal (sample request, devis, rdv, presse) -------------------
+const MODAL_PRESETS = {
+  sample: {
+    eyebrow: "Demande d'échantillon",
+    title: "Recevoir un échantillon",
+    sub: "Présérie expédiée sous sept jours ouvrés à l'adresse de votre institution.",
+    cta: "Envoyer la demande",
+    confirm: "Votre demande d'échantillon est enregistrée. Notre équipe vous recontactera sous 24h."
+  },
+  devis: {
+    eyebrow: "Devis officiel",
+    title: "Générer un devis",
+    sub: "Tarification confidentielle, transmise par courrier institutionnel sous 24h.",
+    cta: "Recevoir le devis",
+    confirm: "Devis en préparation. Vous recevrez le document HD signé sous 24h."
+  },
+  rdv: {
+    eyebrow: "Rendez-vous",
+    title: "Prendre rendez-vous",
+    sub: "Visite d'usine, présentation produit, ou réunion protocolaire.",
+    cta: "Confirmer le rendez-vous",
+    confirm: "Notre équipe institutionnelle revient vers vous pour confirmer les créneaux."
+  },
+  presse: {
+    eyebrow: "Espace presse",
+    title: "Accréditation presse",
+    sub: "Dossier presse, photos HD, accès aux événements de lancement.",
+    cta: "Demander l'accréditation",
+    confirm: "Dossier presse en cours d'envoi à l'adresse renseignée."
+  },
+  whatsapp: {
+    eyebrow: "WhatsApp Business",
+    title: "Conversation WhatsApp",
+    sub: "Échange direct avec un conseiller institutionnel, du dimanche au jeudi.",
+    cta: "Démarrer la conversation",
+    confirm: "Lien de conversation envoyé. Ouvrez WhatsApp pour continuer."
+  },
+  config: {
+    eyebrow: "Configuration sur-mesure",
+    title: "Personnaliser une édition",
+    sub: "Notre studio design conçoit une étiquette aux couleurs de votre institution. Tirage minimum 5 000 unités.",
+    cta: "Lancer la configuration",
+    confirm: "Brief reçu. Notre studio vous propose trois pistes sous 72h."
+  }
+};
+
+function Modal() {
+  const [open, setOpen] = uS(false);
+  const [mode, setMode] = uS("sample");
+  const [sent, setSent] = uS(false);
+  const [form, setForm] = uS({ name: "", inst: "", role: "", email: "", phone: "", qty: "5 000", message: "" });
+
+  uE(() => {
+    const onOpen = (e) => {
+      setMode(e.detail.mode || "sample");
+      setForm((f) => ({ ...f, ...(e.detail.prefill || {}) }));
+      setSent(false);
+      setOpen(true);
+      document.body.style.overflow = "hidden";
+    };
+    const onClose = () => { setOpen(false); document.body.style.overflow = ""; };
+    window.addEventListener("liptako:open-modal", onOpen);
+    window.addEventListener("liptako:close-modal", onClose);
+    return () => {
+      window.removeEventListener("liptako:open-modal", onOpen);
+      window.removeEventListener("liptako:close-modal", onClose);
+      document.body.style.overflow = "";
+    };
+  }, []);
+
+  uE(() => {
+    function onKey(e) { if (e.key === "Escape") closeModal(); }
+    if (open) window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [open]);
+
+  if (!open) return null;
+  const preset = MODAL_PRESETS[mode] || MODAL_PRESETS.sample;
+
+  function submit(e) {
+    e.preventDefault();
+    setSent(true);
+    setTimeout(() => { closeModal(); setSent(false); }, 2800);
+  }
+
+  return (
+    <div className="modal-overlay" onClick={(e) => { if (e.target === e.currentTarget) closeModal(); }}>
+      <div className="modal-shell" role="dialog" aria-modal="true">
+        <button className="modal-close" onClick={closeModal} aria-label="Fermer">✕</button>
+        <div className="modal-side">
+          <div className="modal-mark">l<em>i</em>ptako</div>
+          <div>
+            <div className="modal-eyebrow">{preset.eyebrow}</div>
+            <h3 className="modal-title">{preset.title}</h3>
+            <p className="modal-sub">{preset.sub}</p>
+          </div>
+          <div className="modal-meta">
+            <div className="row"><span>RÉF</span><span className="v">LIP-2026-{mode.toUpperCase().slice(0,4)}</span></div>
+            <div className="row"><span>TRAITEMENT</span><span className="v">&lt; 24h</span></div>
+            <div className="row"><span>CANAL</span><span className="v">Institutionnel · Confidentiel</span></div>
+          </div>
+        </div>
+        <div className="modal-form-wrap">
+          {sent ? (
+            <div className="modal-sent">
+              <div className="modal-check">
+                <svg viewBox="0 0 60 60" width="60" height="60" fill="none" stroke="currentColor" strokeWidth="1.6">
+                  <circle cx="30" cy="30" r="28" opacity="0.4" />
+                  <path d="M18 30l8 8 16-16" className="check-path" />
+                </svg>
+              </div>
+              <div className="modal-confirm">{preset.confirm}</div>
+              <div className="modal-ref">Référence d'envoi · LIP-2026-{mode.toUpperCase().slice(0,4)}-{Math.floor(Math.random() * 9000 + 1000)}</div>
+            </div>
+          ) : (
+            <form className="modal-form" onSubmit={submit}>
+              <div className="form-row">
+                <label>
+                  <span>Nom complet</span>
+                  <input required value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} placeholder="Aïssata Diallo" />
+                </label>
+                <label>
+                  <span>Fonction</span>
+                  <input value={form.role} onChange={(e) => setForm({ ...form, role: e.target.value })} placeholder="Directrice du protocole" />
+                </label>
+              </div>
+              <label>
+                <span>Institution</span>
+                <input required value={form.inst} onChange={(e) => setForm({ ...form, inst: e.target.value })} placeholder="Ministère, banque, hôtel, événement…" />
+              </label>
+              <div className="form-row">
+                <label>
+                  <span>Email</span>
+                  <input type="email" required value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} placeholder="protocole@ministere.ne" />
+                </label>
+                <label>
+                  <span>Téléphone</span>
+                  <input value={form.phone} onChange={(e) => setForm({ ...form, phone: e.target.value })} placeholder="+227 …" />
+                </label>
+              </div>
+              {(mode === "devis" || mode === "config") && (
+                <label>
+                  <span>Volume estimé</span>
+                  <select value={form.qty} onChange={(e) => setForm({ ...form, qty: e.target.value })}>
+                    <option>100 unités · échantillon</option>
+                    <option>5 000 unités · pilote</option>
+                    <option>25 000 unités · série</option>
+                    <option>100 000 unités · production</option>
+                    <option>500 000+ unités · campagne</option>
+                  </select>
+                </label>
+              )}
+              <label>
+                <span>Précisions</span>
+                <textarea rows="3" value={form.message} onChange={(e) => setForm({ ...form, message: e.target.value })} placeholder="Date d'événement, contraintes protocolaires, charte graphique…"></textarea>
+              </label>
+              <div className="form-cta">
+                <button type="button" className="btn-block ghost" onClick={closeModal}>Annuler</button>
+                <button type="submit" className="btn-block solid">{preset.cta} →</button>
+              </div>
+              <div className="form-note">
+                En soumettant ce formulaire, vous acceptez d'être contacté par notre équipe institutionnelle. Vos données restent confidentielles.
+              </div>
+            </form>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+// === sections-top.jsx ===
+
+// Nav, Hero, Manifeste, Chapters
+const { useState, useEffect, useRef } = React;
+
+function useScrolled(threshold = 60) {
+  const [scrolled, setScrolled] = useState(false);
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > threshold);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [threshold]);
+  return scrolled;
+}
+
+function useReveal() {
+  useEffect(() => {
+    const els = document.querySelectorAll(".reveal");
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) {
+          e.target.classList.add("in");
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.05, rootMargin: "0px 0px -40px 0px" });
+    els.forEach((el) => io.observe(el));
+    return () => io.disconnect();
+  });
+}
+
+function Nav() {
+  const scrolled = useScrolled(40);
+  const [drawerOpen, setDrawerOpen] = useState(false);
+
+  const closeDrawer = () => setDrawerOpen(false);
+
+  useEffect(() => {
+    if (!drawerOpen) return;
+    function onKey(e) { if (e.key === "Escape") closeDrawer(); }
+    window.addEventListener("keydown", onKey);
+    document.body.style.overflow = "hidden";
+    return () => { window.removeEventListener("keydown", onKey); document.body.style.overflow = ""; };
+  }, [drawerOpen]);
+
+  function navLink(href, label) {
+    return (
+      <a href={href} onClick={closeDrawer}>{label}</a>
+    );
+  }
+
+  return (
+    <>
+      <nav className={"nav" + (scrolled ? " scrolled" : "")} data-screen-label="Nav">
+        <a href="#top" className="mark">
+          <span className="dot"></span>
+          liptako
+        </a>
+        <ul>
+          <li><a href="#manifeste">Manifeste</a></li>
+          <li><a href="#chapters">Source</a></li>
+          <li><a href="#institutional">Institutions</a></li>
+          <li><a href="#gammes">Gammes</a></li>
+          <li><a href="#niger">Le Niger</a></li>
+          <li><a href="#trust">Prestige</a></li>
+        </ul>
+        <div className="actions">
+          <SearchK />
+          <button className="btn-pill ghost" onClick={() => openModal("whatsapp")}>WhatsApp</button>
+          <button className="btn-pill gold" onClick={() => openModal("sample")}>Demander un échantillon</button>
+          <button
+            className={"nav-burger" + (drawerOpen ? " open" : "")}
+            aria-label="Menu"
+            aria-expanded={drawerOpen}
+            onClick={() => setDrawerOpen(o => !o)}
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </nav>
+
+      <div className={"nav-drawer-overlay" + (drawerOpen ? " open" : "")} onClick={closeDrawer} aria-hidden="true" />
+
+      <div className={"nav-drawer" + (drawerOpen ? " open" : "")} role="dialog" aria-label="Menu de navigation">
+        {navLink("#manifeste", "Manifeste")}
+        {navLink("#chapters", "Source")}
+        {navLink("#institutional", "Institutions")}
+        {navLink("#gammes", "Gammes")}
+        {navLink("#niger", "Le Niger")}
+        {navLink("#trust", "Prestige")}
+        <div className="drawer-cta">
+          <button className="btn-pill gold" style={{ justifyContent: "center" }} onClick={() => { openModal("sample"); closeDrawer(); }}>
+            Demander un échantillon
+          </button>
+          <button className="btn-pill ghost" style={{ justifyContent: "center", borderColor: "rgba(255,255,255,0.3)", color: "#fff" }} onClick={() => { openModal("whatsapp"); closeDrawer(); }}>
+            WhatsApp Business
+          </button>
+        </div>
+      </div>
+    </>
+  );
+}
+
+function useCountdown(targetDate) {
+  const [t, setT] = useState({ d: 0, h: 0, m: 0, s: 0 });
+  useEffect(() => {
+    const tick = () => {
+      const diff = Math.max(0, targetDate - Date.now());
+      const d = Math.floor(diff / 86400000);
+      const h = Math.floor((diff % 86400000) / 3600000);
+      const m = Math.floor((diff % 3600000) / 60000);
+      const s = Math.floor((diff % 60000) / 1000);
+      setT({ d, h, m, s });
+    };
+    tick();
+    const id = setInterval(tick, 1000);
+    return () => clearInterval(id);
+  }, [targetDate]);
+  return t;
+}
+
+const HERO_EDITIONS = [
+  { code: "AFF / 50CL", short: "Affaires Étrangères", cat: "Ministère" },
+  { code: "DEF / 50CL", short: "Défense Nationale", cat: "Ministère" },
+  { code: "JUS / 50CL", short: "Justice", cat: "Ministère" },
+  { code: "ATL / 50CL", short: "Banque Atlantique", cat: "Finance" },
+  { code: "BIA / 50CL", short: "BIA Niger", cat: "Finance" },
+  { code: "RDS / 50CL", short: "Radisson Niamey", cat: "Hôtellerie" },
+  { code: "SND / 50CL", short: "Sonidep", cat: "Énergie" },
+  { code: "ENR / 50CL", short: "Ministère de l'Énergie", cat: "Ministère" }
+];
+
+const HERO_MINERAL = [
+  { sym: "Ca²⁺", name: "Calcium", val: 38, max: 80, unit: "mg/L" },
+  { sym: "Mg²⁺", name: "Magnésium", val: 12, max: 50, unit: "mg/L" },
+  { sym: "Na⁺",  name: "Sodium", val: 8,  max: 50, unit: "mg/L" },
+  { sym: "K⁺",   name: "Potassium", val: 2,  max: 30, unit: "mg/L" },
+  { sym: "HCO₃⁻",name: "Bicarbonates", val: 142, max: 250, unit: "mg/L" },
+  { sym: "pH",   name: "pH neutre", val: 7.2, max: 9, unit: "" }
+];
+
+function HeroDossier() {
+  const [idx, setIdx] = useState(0);
+  useEffect(() => {
+    const id = setInterval(() => setIdx((i) => (i + 1) % HERO_EDITIONS.length), 2600);
+    return () => clearInterval(id);
+  }, []);
+  const t = useCountdown(new Date("2026-08-03T18:00:00+01:00").getTime());
+
+  return (
+    <div className="dossier">
+      <div className="dossier-head">
+        <div className="dossier-stamp">
+          <div className="stamp-line">DOSSIER OFFICIEL</div>
+          <div className="stamp-num">N° 2026 · 001</div>
+        </div>
+        <div className="dossier-live">
+          <span className="pulse"></span>EN ACTIVITÉ
+        </div>
+      </div>
+
+      <div className="dossier-block">
+        <div className="dossier-label">Édition courante</div>
+        <div className="ticker">
+          {HERO_EDITIONS.map((e, i) => (
+            <div key={i} className={"ticker-row" + (i === idx ? " on" : "")}>
+              <span className="t-code">{e.code}</span>
+              <span className="t-name">{e.short}</span>
+              <span className="t-cat">{e.cat}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="dossier-block">
+        <div className="dossier-label">Analyse minérale · échantillon de référence</div>
+        <div className="mineral-grid">
+          {HERO_MINERAL.map((m, i) => (
+            <div className="mineral-row" key={m.sym} style={{ animationDelay: (1.0 + i * 0.12) + "s" }}>
+              <div className="m-head">
+                <span className="m-sym">{m.sym}</span>
+                <span className="m-name">{m.name}</span>
+                <span className="m-val">{m.val}<small>{m.unit}</small></span>
+              </div>
+              <div className="m-bar">
+                <div className="m-fill" style={{ "--w": Math.min(100, (m.val / m.max) * 100) + "%", animationDelay: (1.1 + i * 0.12) + "s" }}></div>
+              </div>
+            </div>
+          ))}
+        </div>
+        <div className="mineral-foot">
+          Eau minérale naturelle faiblement minéralisée · captée à 200 m · Liptako-Gourma, Niger
+        </div>
+      </div>
+
+      <div className="dossier-foot">
+        <div className="cd">
+          <div className="cd-label">Cérémonie nationale · Fête de l'Indépendance</div>
+          <div className="cd-grid">
+            <div className="cd-u"><span>{String(t.d).padStart(2,"0")}</span><small>jours</small></div>
+            <div className="cd-sep">:</div>
+            <div className="cd-u"><span>{String(t.h).padStart(2,"0")}</span><small>h</small></div>
+            <div className="cd-sep">:</div>
+            <div className="cd-u"><span>{String(t.m).padStart(2,"0")}</span><small>min</small></div>
+            <div className="cd-sep">:</div>
+            <div className="cd-u"><span>{String(t.s).padStart(2,"0")}</span><small>s</small></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Hero() {
+  return (
+    <section className="hero" id="top" data-screen-label="01 Hero">
+      <div className="hero-grain"></div>
+      <div className="hero-rule" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </div>
+      <div className="hero-grid">
+        <div className="hero-copy">
+          <div className="hero-eyebrow">
+            <span className="l"></span>
+            <span>Édition Officielle · Niger · 2026</span>
+          </div>
+          <h1 className="display split-in">
+            <span>L'eau qui</span>
+            <span>porte votre</span>
+            <span><em>identité.</em></span>
+          </h1>
+          <p className="sub">
+            Première eau minérale institutionnelle premium du Niger.
+            Captée dans le Liptako-Gourma, embouteillée à Niamey, signée à votre image.
+          </p>
+          <div className="cta-row">
+            <button className="btn-pill gold magnet" onClick={() => openModal("sample")}>
+              <span>Demander un échantillon</span>
+              <span className="arrow-i">→</span>
+            </button>
+            <button className="btn-pill ghost magnet" onClick={() => openModal("config")}>
+              Personnaliser une édition
+            </button>
+          </div>
+          <div className="hero-trust">
+            <div className="ht-item"><span className="dot gold"></span>Marque OAPI · 17 pays</div>
+            <div className="ht-item"><span className="dot"></span>Conforme OMS / UEMOA</div>
+            <div className="ht-item"><span className="dot"></span>Capitaux nigériens</div>
+          </div>
+        </div>
+        <div className="hero-dossier-wrap">
+          <HeroDossier />
+        </div>
+      </div>
+      <div className="meta">
+        <div>
+          <span>Lancement officiel · Niamey · Avril 2026</span>
+        </div>
+        <div className="scroll-cue">
+          <span>Descendre</span>
+          <div className="line"></div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function Manifeste() {
+  return (
+    <section className="manifeste" id="manifeste" data-screen-label="02 Manifeste">
+      <div className="shell">
+        <div className="manifeste-grid">
+          <div className="reveal">
+            <div className="eyebrow muted" style={{ marginBottom: 24 }}>Le manifeste</div>
+            <p>
+              Cette eau ne se boit pas. <em>Elle se présente.</em>
+            </p>
+            <p>
+              Sur une table d'État, dans une chambre d'hôtel, au creux d'une signature institutionnelle —
+              Liptako transforme un geste quotidien en signe d'appartenance.
+            </p>
+            <p>
+              <em>Une eau qui appartient à une nouvelle génération de marques africaines internationales.</em>
+            </p>
+            <div className="manifeste-cta">
+              <button className="btn-pill ghost dark magnet" onClick={() => openModal("rdv")}>
+                Visiter notre usine →
+              </button>
+            </div>
+          </div>
+          <div className="manifeste-stats reveal">
+            <div className="stat">
+              <div className="num">200<sup>m</sup></div>
+              <div className="label">Profondeur de captage</div>
+              <div className="desc">Nappe protégée du Liptako-Gourma, à l'abri des pollutions de surface.</div>
+            </div>
+            <div className="stat">
+              <div className="num">07</div>
+              <div className="label">Étapes de filtration</div>
+              <div className="desc">Charbon actif, micro-filtration, UV. Aucun traitement chimique.</div>
+            </div>
+            <div className="stat">
+              <div className="num">17</div>
+              <div className="label">Pays protégés</div>
+              <div className="desc">Marque déposée OAPI · 17 États d'Afrique de l'Ouest et Centrale.</div>
+            </div>
+            <div className="stat">
+              <div className="num">100<sup>%</sup></div>
+              <div className="label">Souveraineté nigérienne</div>
+              <div className="desc">Captée, embouteillée, étiquetée au Niger. Capitaux locaux majoritaires.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function Chapters() {
+  return (
+    <section className="chapters" id="chapters" data-screen-label="03 Source">
+      <div className="shell">
+        <div className="section-head">
+          <h2 className="display">De la nappe à la <em>table d'État</em>.</h2>
+          <div className="right">
+            <span className="idx">CHAPITRES 01 — 06</span>
+            Six étapes, une seule promesse : que chaque bouteille soit digne de la signature qu'elle porte.
+          </div>
+        </div>
+        {NIGER_CHAPTERS.map((c, i) => (
+          <div key={i} className="chapter reveal">
+            <div className="num">0{i + 1}</div>
+            <div className="title">{c.t}</div>
+            <div className="desc">
+              {c.d}
+              <small>{c.code}</small>
+            </div>
+          </div>
+        ))}
+        <div className="chapters-cta reveal">
+          <button className="btn-pill gold magnet" onClick={() => openModal("rdv")}>
+            Programmer une visite guidée →
+          </button>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+
+// === sections-mid.jsx ===
+
+// Institutional (full-bleed mockup with tilt) + Gammes (with tilt)
+const { useState: useState2, useMemo, useRef: useRef2, useEffect: useEffect2 } = React;
+
+function InstitutionalCard({ sector, onZoom }) {
+  // 3D tilt on the poster
+  const ref = useRef2(null);
+  useEffect2(() => {
+    const el = ref.current;
+    if (!el) return;
+    let raf = 0;
+    function onMove(e) {
+      const r = el.getBoundingClientRect();
+      const x = ((e.clientX - r.left) / r.width - 0.5);
+      const y = ((e.clientY - r.top) / r.height - 0.5);
+      cancelAnimationFrame(raf);
+      raf = requestAnimationFrame(() => {
+        el.style.transform = `perspective(1400px) rotateY(${x * 7}deg) rotateX(${-y * 5}deg) scale(1.02)`;
+        el.style.setProperty("--glare-x", ((e.clientX - r.left) / r.width * 100) + "%");
+        el.style.setProperty("--glare-y", ((e.clientY - r.top) / r.height * 100) + "%");
+        el.style.setProperty("--glare-o", "0.35");
+      });
+    }
+    function onLeave() {
+      cancelAnimationFrame(raf);
+      el.style.transform = "perspective(1400px) rotateY(0) rotateX(0) scale(1)";
+      el.style.setProperty("--glare-o", "0");
+    }
+    el.addEventListener("mousemove", onMove);
+    el.addEventListener("mouseleave", onLeave);
+    return () => {
+      el.removeEventListener("mousemove", onMove);
+      el.removeEventListener("mouseleave", onLeave);
+    };
+  }, []);
+
+  return (
+    <div className="poster-stage" key={sector.id}>
+      <div className="poster" ref={ref} onClick={onZoom}>
+        <img src={sector.img} alt={"Édition " + sector.short} />
+        <div className="poster-glare"></div>
+        <div className="poster-corner tl">{sector.code}</div>
+        <div className="poster-corner tr">{sector.cat.toUpperCase()}</div>
+        <div className="poster-corner bl">LIPTAKO ED.</div>
+        <div className="poster-corner br">2026 · NE</div>
+        <button className="poster-zoom" aria-label="Agrandir">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4">
+            <circle cx="7" cy="7" r="5"/><path d="M11 11l3 3M5 7h4M7 5v4"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  );
+}
+
+function Institutional() {
+  const [active, setActive] = useState2(SECTORS[0]);
+  const [zoom, setZoom] = useState2(false);
+
+  // Page palette
+  const pal = active.palette;
+
+  // Listen for SearchK sector selection
+  useEffect2(() => {
+    function onSetSector(e) {
+      const s = SECTORS.find(x => x.id === e.detail);
+      if (s) setActive(s);
+    }
+    window.addEventListener("liptako:set-sector", onSetSector);
+    return () => window.removeEventListener("liptako:set-sector", onSetSector);
+  }, []);
+
+  useEffect2(() => {
+    if (!zoom) return;
+    function onKey(e) { if (e.key === "Escape") setZoom(false); }
+    window.addEventListener("keydown", onKey);
+    document.body.style.overflow = "hidden";
+    return () => { window.removeEventListener("keydown", onKey); document.body.style.overflow = ""; };
+  }, [zoom]);
+
+  return (
+    <section
+      className="institutional"
+      id="institutional"
+      data-screen-label="05 Institutionnel"
+      style={{
+        background: `linear-gradient(180deg, ${pal.bg} 0%, ${pal.sidebar || pal.bg} 100%)`,
+        color: pal.text
+      }}
+    >
+      <div className="inst-bg-glow" style={{ background: `radial-gradient(circle at 70% 30%, ${pal.accent}33, transparent 60%)` }}></div>
+
+      <div className="shell">
+        <div className="section-head" style={{ color: pal.text }}>
+          <h2 className="display" style={{ color: pal.text }}>
+            Une eau qui<br />signe vos <em style={{ color: pal.accent }}>institutions</em>.
+          </h2>
+          <div className="right" style={{ color: pal.muted }}>
+            <span className="idx" style={{ color: pal.accent }}>SECTEURS · 04</span>
+            Le site adopte instantanément les couleurs, la signature et le poster de l'institution choisie.
+          </div>
+        </div>
+
+        <div className="inst-tabs" style={{ borderBottomColor: pal.muted }}>
+          {SECTORS.map((s) => (
+            <div
+              key={s.id}
+              className={"inst-tab" + (active.id === s.id ? " active" : "")}
+              onClick={() => setActive(s)}
+              style={{
+                color: active.id === s.id ? pal.text : pal.muted,
+                borderBottomColor: active.id === s.id ? pal.accent : "transparent"
+              }}
+            >
+              {s.short}
+            </div>
+          ))}
+        </div>
+
+        <div className="inst-layout">
+          <div className="inst-copy">
+            <div className="signature" style={{ color: pal.accent }}>{active.cat} · République du Niger</div>
+            <h3 style={{ color: pal.text }}>{active.long}</h3>
+            <p
+              style={{ color: pal.accent, fontFamily: "var(--serif)", fontStyle: "italic", fontSize: 22, marginBottom: 28, lineHeight: 1.3 }}
+            >
+              « {active.motto} »
+            </p>
+            <p className="desc" style={{ color: pal.muted }}>{active.body}</p>
+            <div className="inst-pillars">
+              {active.pillars.map((p, i) => (
+                <div key={i} className="pillar" style={{ borderTopColor: pal.muted }}>
+                  <div className="num" style={{ color: pal.accent }}>0{i + 1}</div>
+                  <h5 style={{ color: pal.text }}>{p.t}</h5>
+                  <p style={{ color: pal.muted }}>{p.d}</p>
+                </div>
+              ))}
+            </div>
+            <div className="inst-actions">
+              <button className="btn-pill solid-acc magnet" style={{ background: pal.accent, color: pal.bg }} onClick={() => openModal("config", { inst: active.long })}>
+                Personnaliser cette édition →
+              </button>
+              <button className="btn-pill ghost magnet" style={{ borderColor: pal.muted, color: pal.text }} onClick={() => openModal("devis", { inst: active.long })}>
+                Devis officiel
+              </button>
+            </div>
+          </div>
+
+          <InstitutionalCard sector={active} onZoom={() => setZoom(true)} />
+        </div>
+
+        <div className="inst-thumbs">
+          {SECTORS.map((s) => (
+            <button
+              key={s.id}
+              className={"thumb" + (active.id === s.id ? " active" : "")}
+              onClick={() => setActive(s)}
+              style={{
+                borderColor: active.id === s.id ? s.palette.accent : "transparent"
+              }}
+            >
+              <img src={s.img} alt={s.short} />
+              <div className="thumb-cap" style={{ background: s.palette.bg, color: s.palette.text }}>{s.short}</div>
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {zoom && (
+        <div className="poster-lightbox" onClick={() => setZoom(false)}>
+          <button className="lb-close" aria-label="Fermer">✕</button>
+          <img src={active.img} alt={active.short} />
+          <div className="lb-meta">
+            <div className="lb-eye">{active.cat} · {active.code}</div>
+            <div className="lb-name">{active.long}</div>
+          </div>
+        </div>
+      )}
+    </section>
+  );
+}
+
+function GammeCard({ g, i }) {
+  const ref = useRef2(null);
+  useEffect2(() => {
+    const el = ref.current;
+    if (!el) return;
+    let raf = 0;
+    function onMove(e) {
+      const r = el.getBoundingClientRect();
+      const x = ((e.clientX - r.left) / r.width - 0.5);
+      const y = ((e.clientY - r.top) / r.height - 0.5);
+      cancelAnimationFrame(raf);
+      raf = requestAnimationFrame(() => {
+        el.style.transform = `perspective(1200px) rotateY(${x * 6}deg) rotateX(${-y * 4}deg)`;
+        el.style.setProperty("--glare-x", ((e.clientX - r.left) / r.width * 100) + "%");
+        el.style.setProperty("--glare-y", ((e.clientY - r.top) / r.height * 100) + "%");
+        el.style.setProperty("--glare-o", "0.25");
+      });
+    }
+    function onLeave() {
+      cancelAnimationFrame(raf);
+      el.style.transform = "perspective(1200px) rotateY(0) rotateX(0)";
+      el.style.setProperty("--glare-o", "0");
+    }
+    el.addEventListener("mousemove", onMove);
+    el.addEventListener("mouseleave", onLeave);
+    return () => {
+      el.removeEventListener("mousemove", onMove);
+      el.removeEventListener("mouseleave", onLeave);
+    };
+  }, []);
+
+  return (
+    <div className="gamme" ref={ref} style={{ animationDelay: (i * 0.06) + "s" }}>
+      <div className="tag">{g.tag}</div>
+      <div className="img-wrap">
+        <img src={g.img} alt={g.name} />
+      </div>
+      <h4>{g.name}</h4>
+      <div className="vol">{g.vol}</div>
+      <div className="desc">{g.desc}</div>
+      <div className="meta-row">
+        <div className="price">
+          <span className="price-tag">Tarification négociée</span>
+          <small>selon partenariat institutionnel</small>
+        </div>
+        <button className="arrow" onClick={() => openModal("devis", { inst: g.name, qty: g.vol })} aria-label={"Demander un devis pour " + g.name}>
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+            <path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
+        </button>
+      </div>
+      <div className="gamme-glare"></div>
+    </div>
+  );
+}
+
+function Gammes() {
+  return (
+    <section className="gammes" id="gammes" data-screen-label="06 Gammes">
+      <div className="shell">
+        <div className="section-head reveal">
+          <h2 className="display">Six <em>gammes</em>. Une signature.</h2>
+          <div className="right">
+            <span className="idx">CATALOGUE · 05</span>
+            Du format poche au tirage de cérémonie, chaque référence pensée pour un usage précis.
+          </div>
+        </div>
+        <div className="gamme-grid reveal">
+          {PRODUCT_GAMME.map((g, i) => <GammeCard key={g.tag} g={g} i={i} />)}
+        </div>
+        <div className="gammes-cta reveal">
+          <button className="btn-pill gold magnet" onClick={() => openModal("devis")}>
+            Recevoir le catalogue HD →
+          </button>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+
+// === sections-bottom.jsx ===
+
+// Niger, Trust, CTA, Footer, Concierge, Loader
+const { useState: useState3, useEffect: useEffect3, useRef: useRef3, useMemo: useMemo3 } = React;
+
+const TERR_REGIONS = [
+  { id: "tillaberi", name: "Tillabéri", x: 18, y: 60, role: "source", role_label: "Captage", note: "Nappe du Liptako-Gourma · 200 m de profondeur · pureté géologique", stat: "Source unique" },
+  { id: "niamey",    name: "Niamey",    x: 22, y: 72, role: "hub",    role_label: "Usine",   note: "Centre d'embouteillage et studio design · 12 000 m² · ligne automatisée", stat: "Hub national" },
+  { id: "dosso",     name: "Dosso",     x: 32, y: 76, role: "node",   role_label: "Corridor",note: "Couloir sud vers la frontière béninoise · livraison logistique 4×4", stat: "Corridor sud" },
+  { id: "tahoua",    name: "Tahoua",    x: 42, y: 54, role: "node",   role_label: "Région",  note: "Pôle administratif · institutions régionales et préfectures", stat: "Pôle régional" },
+  { id: "agadez",    name: "Agadez",    x: 56, y: 30, role: "node",   role_label: "Cérémonial",note: "Couloir saharien · cérémonies, hôtellerie d'exception, Aïr et Ténéré", stat: "Couloir saharien" },
+  { id: "maradi",    name: "Maradi",    x: 54, y: 70, role: "node",   role_label: "Commerce", note: "Capitale économique · banques, marchés institutionnels, hôtels d'affaires", stat: "Capitale économique" },
+  { id: "zinder",    name: "Zinder",    x: 70, y: 66, role: "node",   role_label: "Patrimoine",note: "Ancienne capitale impériale · sultans, palais, événementiel d'État", stat: "Couronne historique" },
+  { id: "diffa",     name: "Diffa",     x: 88, y: 70, role: "node",   role_label: "Frontière",note: "Frontière est · diplomatie de proximité avec le bassin du Tchad", stat: "Frontière est" }
+];
+
+function Niger() {
+  const [sel, setSel] = useState3("tillaberi");
+  const [hover, setHover] = useState3(null);
+  const [drawn, setDrawn] = useState3(false);
+
+  // Auto-rotate selection when not hovered
+  useEffect3(() => {
+    if (hover) return;
+    const id = setInterval(() => {
+      setSel((cur) => {
+        const i = TERR_REGIONS.findIndex((r) => r.id === cur);
+        return TERR_REGIONS[(i + 1) % TERR_REGIONS.length].id;
+      });
+    }, 4200);
+    return () => clearInterval(id);
+  }, [hover]);
+
+  // Trigger path draw animation on visibility
+  const wrap = useRef3(null);
+  useEffect3(() => {
+    const el = wrap.current;
+    if (!el) return;
+    const io = new IntersectionObserver((es) => {
+      es.forEach((e) => {
+        if (e.isIntersecting) { setDrawn(true); io.unobserve(el); }
+      });
+    }, { threshold: 0.25 });
+    io.observe(el);
+    return () => io.disconnect();
+  }, []);
+
+  const source = TERR_REGIONS.find((r) => r.role === "source");
+  const cur = TERR_REGIONS.find((r) => r.id === sel) || source;
+
+  return (
+    <section className="niger" id="niger" data-screen-label="07 Territoire">
+      <div className="shell">
+        <div className="section-head reveal" style={{ marginBottom: 32 }}>
+          <h2 className="display">Un territoire, <em>huit régions</em>.</h2>
+          <div className="right">
+            <span className="idx">TERRITOIRE · 07</span>
+            De la nappe du Liptako-Gourma à la frontière du Tchad, une eau livrée aux institutions partout au Niger.
+          </div>
+        </div>
+        <div className="niger-marquee reveal">
+          <span>Sahel · <em>Niger</em> · Liptako · <em>Fierté</em> ·&nbsp;</span>
+        </div>
+
+        <div className="territoire reveal" ref={wrap}>
+          <div className="terr-map">
+            <div className="terr-grid"></div>
+            <div className="terr-axis-y"></div>
+            <div className="terr-axis-x"></div>
+            <div className="terr-corner tl">N · 23°</div>
+            <div className="terr-corner tr">E · 16°</div>
+            <div className="terr-corner bl">N · 12°</div>
+            <div className="terr-corner br">CARTE · OPS · 2026</div>
+
+            <svg className="terr-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+              <defs>
+                <linearGradient id="pathGrad" x1="0" x2="1">
+                  <stop offset="0" stopColor="#B8860B" stopOpacity="0.9" />
+                  <stop offset="1" stopColor="#0F6E56" stopOpacity="0.4" />
+                </linearGradient>
+                <radialGradient id="sourceGlow">
+                  <stop offset="0" stopColor="#B8860B" stopOpacity="0.5" />
+                  <stop offset="1" stopColor="#B8860B" stopOpacity="0" />
+                </radialGradient>
+              </defs>
+
+              {/* Distribution paths from source */}
+              {TERR_REGIONS.filter((r) => r.role !== "source").map((r, i) => {
+                const dx = r.x - source.x;
+                const dy = r.y - source.y;
+                const mx = source.x + dx * 0.5 + (dy > 0 ? -6 : 6);
+                const my = source.y + dy * 0.5 + (dx > 0 ? -4 : 4);
+                return (
+                  <path
+                    key={r.id}
+                    d={`M${source.x},${source.y} Q${mx},${my} ${r.x},${r.y}`}
+                    fill="none"
+                    stroke="url(#pathGrad)"
+                    strokeWidth="0.3"
+                    strokeDasharray="120"
+                    strokeDashoffset={drawn ? 0 : 120}
+                    style={{
+                      transition: `stroke-dashoffset 1.6s ${0.2 + i * 0.12}s cubic-bezier(0.2, 0.8, 0.2, 1)`,
+                      opacity: sel === r.id ? 1 : 0.45
+                    }}
+                  />
+                );
+              })}
+
+              {/* Animated traveling dots along paths to selected node */}
+              {sel !== source.id && (() => {
+                const r = TERR_REGIONS.find((x) => x.id === sel);
+                const dx = r.x - source.x;
+                const dy = r.y - source.y;
+                const mx = source.x + dx * 0.5 + (dy > 0 ? -6 : 6);
+                const my = source.y + dy * 0.5 + (dx > 0 ? -4 : 4);
+                return [0, 1, 2].map((i) => (
+                  <circle key={i} r="0.6" fill="#B8860B">
+                    <animateMotion dur="3s" repeatCount="indefinite" begin={i * 1 + "s"} path={`M${source.x},${source.y} Q${mx},${my} ${r.x},${r.y}`} />
+                  </circle>
+                ));
+              })()}
+
+              {/* Source halo */}
+              <circle cx={source.x} cy={source.y} r="6" fill="url(#sourceGlow)" className="src-halo" />
+            </svg>
+
+            {/* Nodes */}
+            {TERR_REGIONS.map((r) => (
+              <button
+                key={r.id}
+                className={"terr-node " + r.role + (sel === r.id ? " active" : "")}
+                style={{ left: r.x + "%", top: r.y + "%" }}
+                onMouseEnter={() => { setHover(r.id); setSel(r.id); }}
+                onMouseLeave={() => setHover(null)}
+                onClick={() => setSel(r.id)}
+              >
+                <span className="dot"></span>
+                <span className="ring"></span>
+                {r.role === "source" && <span className="ring r2"></span>}
+                <span className="lbl">{r.name}</span>
+                {r.role === "source" && <span className="tag">SOURCE</span>}
+                {r.role === "hub" && <span className="tag">USINE</span>}
+              </button>
+            ))}
+
+            <div className="terr-legend">
+              <div><span className="lg-dot src"></span>Captage</div>
+              <div><span className="lg-dot hub"></span>Embouteillage</div>
+              <div><span className="lg-dot node"></span>Distribution</div>
+            </div>
+          </div>
+
+          <div className="terr-panel">
+            <div className="tp-stamp">
+              <span>FICHE TERRITOIRE</span>
+              <span className="tp-code">{cur.id.toUpperCase()} · 0{TERR_REGIONS.findIndex(r => r.id === cur.id) + 1}/8</span>
+            </div>
+            <div className="tp-body" key={cur.id}>
+              <div className="tp-role">{cur.role_label}</div>
+              <h3 className="tp-name">{cur.name}</h3>
+              <div className="tp-stat">{cur.stat}</div>
+              <p className="tp-note">{cur.note}</p>
+
+              <div className="tp-coords">
+                <div><span>LAT</span><span className="v">{(14 + cur.y / 100 * 8).toFixed(2)}° N</span></div>
+                <div><span>LON</span><span className="v">{(0 + cur.x / 100 * 16).toFixed(2)}° E</span></div>
+                <div><span>STATUT</span><span className="v live">ACTIF</span></div>
+              </div>
+            </div>
+
+            <div className="tp-strip">
+              {TERR_REGIONS.map((r, i) => (
+                <button
+                  key={r.id}
+                  className={"tp-pill" + (sel === r.id ? " on" : "")}
+                  onClick={() => setSel(r.id)}
+                  onMouseEnter={() => { setHover(r.id); setSel(r.id); }}
+                  onMouseLeave={() => setHover(null)}
+                >
+                  <span className="i">0{i + 1}</span> {r.name}
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <div className="terr-bands reveal">
+          <div className="band">
+            <div className="band-num"><Counter to={8} /></div>
+            <div className="band-lab">Régions desservies</div>
+            <div className="band-sub">Niamey, Tillabéri, Dosso, Tahoua, Maradi, Zinder, Agadez, Diffa</div>
+          </div>
+          <div className="band">
+            <div className="band-num"><Counter to={200} /><sup>m</sup></div>
+            <div className="band-lab">Profondeur de captage</div>
+            <div className="band-sub">Nappe protégée du Liptako-Gourma · à l'abri des contaminations</div>
+          </div>
+          <div className="band">
+            <div className="band-num"><Counter to={1267} /></div>
+            <div className="band-lab">Km de routage logistique</div>
+            <div className="band-sub">Niamey → Diffa, livraison institutionnelle conditionnée</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function Counter({ to, suffix }) {
+  const [v, setV] = useState3(0);
+  const ref = useRef3();
+  useEffect3(() => {
+    const el = ref.current;
+    if (!el) return;
+    let started = false;
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting && !started) {
+          started = true;
+          const dur = 1400;
+          const start = performance.now();
+          const tick = (now) => {
+            const t = Math.min(1, (now - start) / dur);
+            const eased = 1 - Math.pow(1 - t, 3);
+            setV(Math.round(to * eased));
+            if (t < 1) requestAnimationFrame(tick);
+          };
+          requestAnimationFrame(tick);
+        }
+      });
+    }, { threshold: 0.5 });
+    io.observe(el);
+    return () => io.disconnect();
+  }, [to]);
+  return <span ref={ref}>{v.toLocaleString("fr-FR")}{suffix ? <sup>{suffix}</sup> : null}</span>;
+}
+
+function Trust() {
+  return (
+    <section className="trust" id="trust" data-screen-label="08 Prestige">
+      <div className="shell">
+        <div className="section-head reveal">
+          <h2 className="display">La <em>confiance</em>, mesurable.</h2>
+          <div className="right">
+            <span className="idx">PRESTIGE · 08</span>
+            Une marque protégée, des partenariats officiels, une exigence sanitaire conforme aux plus hautes normes.
+          </div>
+        </div>
+
+        <div className="trust-stats reveal">
+          <div className="trust-stat">
+            <div className="num"><Counter to={17} /></div>
+            <div className="lab">Pays protégés OAPI</div>
+          </div>
+          <div className="trust-stat">
+            <div className="num"><Counter to={12} /></div>
+            <div className="lab">Institutions partenaires</div>
+          </div>
+          <div className="trust-stat">
+            <div className="num"><Counter to={250000} /></div>
+            <div className="lab">Bouteilles · 1<sup>er</sup> trimestre</div>
+          </div>
+          <div className="trust-stat">
+            <div className="num"><Counter to={100} suffix="%" /></div>
+            <div className="lab">Conformité OMS / UEMOA</div>
+          </div>
+        </div>
+
+        <div className="partner-grid reveal">
+          {SECTORS.map((s) => (
+            <button key={s.id} className="partner" onClick={() => openModal("devis", { inst: s.long })}>
+              <div className="cat">{s.cat}</div>
+              <div className="name">{s.short}</div>
+              <div className="partner-go">Édition dédiée →</div>
+            </button>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function CtaStrip() {
+  return (
+    <section className="cta-strip" data-screen-label="09 CTA">
+      <div className="cta-bg-anim" aria-hidden="true">
+        <div className="orb o1"></div>
+        <div className="orb o2"></div>
+        <div className="orb o3"></div>
+      </div>
+      <div className="shell">
+        <div className="inner">
+          <h2 className="display">
+            Mettez votre <em>signature</em><br />en bouteille.
+          </h2>
+          <div className="right">
+            <p>
+              Notre équipe institutionnelle revient vers vous sous 24 heures, devis HD à l'appui.
+              Présérie possible en sept jours ouvrés.
+            </p>
+            <div className="row">
+              <button className="btn-pill gold magnet" onClick={() => openModal("sample")}>Demander un échantillon</button>
+              <button className="btn-pill ghost magnet" onClick={() => openModal("rdv")}>Prendre rendez-vous</button>
+              <button className="btn-pill ghost magnet" onClick={() => openModal("whatsapp")}>WhatsApp Business</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function Footer() {
+  return (
+    <footer className="foot" data-screen-label="10 Footer">
+      <div className="shell">
+        <div className="foot-grid">
+          <div className="foot-brand">
+            <div className="mark"><span className="dot"></span>liptako</div>
+            <p>
+              Première eau minérale institutionnelle premium du Niger. Captée dans le Liptako-Gourma, signée à votre image.
+            </p>
+          </div>
+          <div>
+            <h6>Marque</h6>
+            <ul>
+              <li><a href="#manifeste">Manifeste</a></li>
+              <li><a href="#chapters">Notre source</a></li>
+              <li><a href="#niger">Le Niger</a></li>
+              <li><a href="#">Presse</a></li>
+            </ul>
+          </div>
+          <div>
+            <h6>Produits</h6>
+            <ul>
+              <li><a href="#gammes">Gammes</a></li>
+              <li><a href="#" onClick={(e) => { e.preventDefault(); openModal("config"); }}>Personnalisation</a></li>
+              <li><a href="#" onClick={(e) => { e.preventDefault(); openModal("devis"); }}>Catalogue HD</a></li>
+              <li><a href="#" onClick={(e) => { e.preventDefault(); openModal("devis"); }}>Fiche technique</a></li>
+            </ul>
+          </div>
+          <div>
+            <h6>Clients</h6>
+            <ul>
+              <li><a href="#institutional">Ministères</a></li>
+              <li><a href="#institutional">Banques</a></li>
+              <li><a href="#institutional">Hôtels</a></li>
+              <li><a href="#institutional">Événements</a></li>
+            </ul>
+          </div>
+          <div>
+            <h6>Contact</h6>
+            <ul>
+              <li>Niamey · Niger</li>
+              <li><a href="tel:+22796343412">(227) 96 34 34 12</a></li>
+              <li><a href="#" onClick={(e) => { e.preventDefault(); openModal("presse"); }}>Espace presse</a></li>
+              <li><a href="#" onClick={(e) => { e.preventDefault(); openModal("whatsapp"); }}>WhatsApp Business</a></li>
+            </ul>
+          </div>
+        </div>
+        <div className="foot-bar">
+          <div>© 2026 LIPTAKO · Société Nigérienne d'Eau Minérale</div>
+          <div>Marque déposée OAPI · 17 pays</div>
+          <div>Mentions légales · Cookies · Politique sanitaire</div>
+        </div>
+      </div>
+    </footer>
+  );
+}
+
+function Concierge() {
+  const [open, setOpen] = useState3(false);
+  const [messages, setMessages] = useState3([
+    { who: "ai", text: "Bonsoir. Je suis le Concierge Liptako. Je peux vous orienter vers une gamme, générer un devis, ou vous mettre en relation avec notre équipe institutionnelle." }
+  ]);
+  const [busy, setBusy] = useState3(false);
+
+  async function quick(prompt) {
+    setMessages((m) => [...m, { who: "me", text: prompt }]);
+    setBusy(true);
+    try {
+      const reply = await window.claude.complete(
+        `Tu es le concierge IA de Liptako, première eau minérale institutionnelle premium du Niger. Réponds en français, de manière sobre, courtoise et institutionnelle. Maximum 3 phrases courtes. Question : ${prompt}`
+      );
+      setMessages((m) => [...m, { who: "ai", text: reply }]);
+    } catch (e) {
+      setMessages((m) => [...m, { who: "ai", text: "Notre équipe vous recontactera sous 24h. Merci de votre intérêt pour Liptako." }]);
+    } finally {
+      setBusy(false);
+    }
+  }
+
+  return (
+    <div className="concierge">
+      {open ? (
+        <div className="concierge-panel">
+          <div className="head">
+            <div className="ttl">Liptako <em>Concierge</em></div>
+            <div className="status"><span className="live"></span>EN LIGNE</div>
+          </div>
+          <div className="body">
+            {messages.map((m, i) => (
+              <div key={i} className={"bubble " + m.who}>{m.text}</div>
+            ))}
+            {busy ? <div className="bubble ai" style={{ opacity: 0.6 }}>…</div> : null}
+            <div className="quick">
+              <button onClick={() => quick("Quelle gamme pour un hôtel 5 étoiles ?")}>Gamme pour hôtel</button>
+              <button onClick={() => quick("Combien coûte une présérie institutionnelle ?")}>Prix présérie</button>
+              <button onClick={() => quick("Quel est le délai pour un ministère ?")}>Délai ministère</button>
+              <button onClick={() => quick("Quels sont vos certificats sanitaires ?")}>Certifications</button>
+            </div>
+          </div>
+          <div className="foot">
+            <span>Powered by Liptako AI</span>
+            <button onClick={() => setOpen(false)} style={{ color: "rgba(255,255,255,0.5)" }}>Fermer ✕</button>
+          </div>
+        </div>
+      ) : null}
+      <button className="concierge-btn" onClick={() => setOpen((o) => !o)}>
+        <span className="pulse"></span>
+        Concierge IA
+      </button>
+    </div>
+  );
+}
+
+function Loader() {
+  const [gone, setGone] = useState3(false);
+  useEffect3(() => {
+    const t = setTimeout(() => setGone(true), 1400);
+    return () => clearTimeout(t);
+  }, []);
+  return (
+    <div className={"loader" + (gone ? " gone" : "")}>
+      <div className="mark">l<em>i</em>ptako</div>
+      <div className="progress"></div>
+      <div className="sub">Première eau institutionnelle premium · Niger</div>
+    </div>
+  );
+}
+
+
+// === LiptakoBot — Interactive robot (21st.dev style) ===
+
+const BOT_MESSAGES = [
+  { text: "Bonjour ! Je suis <em>Liptako Bot</em>. Que puis-je faire pour vous ?", action: null },
+  { text: "Explorez nos <em>11 éditions</em> institutionnelles — chaque ministère a sa signature.", action: "institutional" },
+  { text: "Appuyez sur <em>⌘K</em> pour rechercher rapidement n'importe quelle gamme ou édition.", action: null },
+  { text: "Un événement officiel ? Demandez un <em>devis</em> en moins de 24h.", action: "devis" },
+  { text: "Notre eau est captée à <em>200 m</em> de profondeur dans le Liptako-Gourma.", action: "chapters" },
+  { text: "Marque protégée dans <em>17 pays</em> OAPI. Une eau internationale, fabriquée au Niger.", action: "trust" },
+];
+
+function LiptakoBot() {
+  const [msgIdx, setMsgIdx]     = useState3(0);
+  const [showBubble, setShow]   = useState3(false);
+  const [isExcited, setExcited] = useState3(false);
+  const [isWaving, setWaving]   = useState3(false);
+  const [mouthOpen, setMouth]   = useState3(false);
+  const leftEye  = useRef3(null);
+  const rightEye = useRef3(null);
+  const leftPupil  = useRef3(null);
+  const rightPupil = useRef3(null);
+  const blinkTimer = useRef3(null);
+
+  // Eyes follow cursor
+  useEffect3(() => {
+    function movePupil(eyeEl, pupilEl, mx, my) {
+      if (!eyeEl || !pupilEl) return;
+      const r = eyeEl.getBoundingClientRect();
+      const cx = r.left + r.width / 2;
+      const cy = r.top + r.height / 2;
+      const dx = mx - cx, dy = my - cy;
+      const dist = Math.sqrt(dx*dx + dy*dy);
+      const max = 4;
+      const scale = dist > max ? max / dist : 1;
+      pupilEl.style.transform = `translate(${(dx * scale).toFixed(1)}px, ${(dy * scale).toFixed(1)}px)`;
+    }
+    function onMove(e) {
+      movePupil(leftEye.current,  leftPupil.current,  e.clientX, e.clientY);
+      movePupil(rightEye.current, rightPupil.current, e.clientX, e.clientY);
+    }
+    window.addEventListener("mousemove", onMove, { passive: true });
+    return () => window.removeEventListener("mousemove", onMove);
+  }, []);
+
+  // Random blinking
+  useEffect3(() => {
+    function scheduleBlink() {
+      const delay = 2000 + Math.random() * 3000;
+      blinkTimer.current = setTimeout(() => {
+        [leftEye.current, rightEye.current].forEach(el => {
+          if (!el) return;
+          el.classList.add("blink");
+          setTimeout(() => el.classList.remove("blink"), 180);
+        });
+        scheduleBlink();
+      }, delay);
+    }
+    scheduleBlink();
+    return () => clearTimeout(blinkTimer.current);
+  }, []);
+
+  // Auto-cycle messages while bubble is visible
+  useEffect3(() => {
+    if (!showBubble) return;
+    const id = setInterval(() => {
+      setMsgIdx(i => (i + 1) % BOT_MESSAGES.length);
+      setExcited(true);
+      setMouth(true);
+      setTimeout(() => { setExcited(false); setMouth(false); }, 600);
+    }, 4500);
+    return () => clearInterval(id);
+  }, [showBubble]);
+
+  function handleClick() {
+    const msg = BOT_MESSAGES[msgIdx];
+    if (msg.action === "devis")         { openModal("devis"); return; }
+    if (msg.action === "institutional") { document.getElementById("institutional")?.scrollIntoView({ behavior: "smooth" }); return; }
+    if (msg.action === "chapters")      { document.getElementById("chapters")?.scrollIntoView({ behavior: "smooth" }); return; }
+    if (msg.action === "trust")         { document.getElementById("trust")?.scrollIntoView({ behavior: "smooth" }); return; }
+    setShow(v => !v);
+    if (!showBubble) {
+      setWaving(true);
+      setMouth(true);
+      setTimeout(() => { setWaving(false); setMouth(false); }, 700);
+    }
+  }
+
+  const cls = ["lbot", isExcited ? "excited" : "", isWaving ? "wave" : "", mouthOpen ? "talking" : ""].filter(Boolean).join(" ");
+  const msg = BOT_MESSAGES[msgIdx];
+
+  return (
+    <div className="lbot-wrap">
+      {showBubble && (
+        <div className="lbot-bubble" onClick={() => { if (msg.action) handleClick(); }}>
+          <span dangerouslySetInnerHTML={{ __html: msg.text }} />
+          <span className="lbot-bubble-dot"></span>
+        </div>
+      )}
+      <div className={cls} onClick={handleClick} title="Liptako Bot — Cliquez pour interagir">
+        {/* Antenna */}
+        <div className="lbot-antenna"></div>
+        {/* Head */}
+        <div className="lbot-head">
+          <div className="lbot-eye" ref={leftEye}>
+            <div className="lbot-pupil" ref={leftPupil}></div>
+            <div className="lbot-shine"></div>
+          </div>
+          <div className="lbot-eye" ref={rightEye}>
+            <div className="lbot-pupil" ref={rightPupil}></div>
+            <div className="lbot-shine"></div>
+          </div>
+          <div className="lbot-mouth">
+            <div className="lbot-mouth-fill"></div>
+          </div>
+        </div>
+        {/* Neck */}
+        <div className="lbot-neck"></div>
+        {/* Body */}
+        <div className="lbot-body">
+          <div className="lbot-arms">
+            <div className="lbot-arm left"></div>
+            <div className="lbot-arm right"></div>
+          </div>
+          <div className="lbot-chest">
+            <div className="lbot-led"></div>
+            <div className="lbot-led"></div>
+            <div className="lbot-led"></div>
+          </div>
+        </div>
+        {/* Legs */}
+        <div className="lbot-legs">
+          <div className="lbot-leg"></div>
+          <div className="lbot-leg"></div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+// === SearchK — Cmd+K command palette ===
+
+const SK_ITEMS = [
+  // Quick actions
+  { id: "sample",    group: "Actions rapides", icon: "◈", iconCls: "gold",    name: "Demander un échantillon",      sub: "Présérie expédiée sous 7 jours ouvrés",              badge: "action",   action: () => openModal("sample") },
+  { id: "devis",     group: "Actions rapides", icon: "◎", iconCls: "gold",    name: "Générer un devis officiel",    sub: "Tarification HD transmise sous 24h",                  badge: "action",   action: () => openModal("devis") },
+  { id: "rdv",       group: "Actions rapides", icon: "◷", iconCls: "",         name: "Prendre rendez-vous",          sub: "Visite d'usine · présentation produit",               badge: "action",   action: () => openModal("rdv") },
+  { id: "config",    group: "Actions rapides", icon: "✦", iconCls: "gold",    name: "Personnaliser une édition",    sub: "Studio design · étiquette sur-mesure",                badge: "action",   action: () => openModal("config") },
+  { id: "whatsapp",  group: "Actions rapides", icon: "◉", iconCls: "emerald", name: "Chat WhatsApp Business",       sub: "Conseiller institutionnel · dim–jeu",                  badge: "action",   action: () => openModal("whatsapp") },
+  { id: "presse",    group: "Actions rapides", icon: "◈", iconCls: "",         name: "Accréditation presse",         sub: "Dossier presse · photos HD · événements",             badge: "action",   action: () => openModal("presse") },
+  // Navigation
+  { id: "nav-manifeste",    group: "Navigation", icon: "→", iconCls: "", name: "Manifeste",        sub: "La vision et les valeurs Liptako",              badge: "action", action: () => document.getElementById("manifeste")?.scrollIntoView({ behavior: "smooth" }) },
+  { id: "nav-source",       group: "Navigation", icon: "→", iconCls: "", name: "La Source",        sub: "6 étapes, de la nappe à la table d'État",        badge: "action", action: () => document.getElementById("chapters")?.scrollIntoView({ behavior: "smooth" }) },
+  { id: "nav-institutions", group: "Navigation", icon: "→", iconCls: "", name: "Institutions",     sub: "11 éditions · ministères, banques, hôtels",     badge: "action", action: () => document.getElementById("institutional")?.scrollIntoView({ behavior: "smooth" }) },
+  { id: "nav-gammes",       group: "Navigation", icon: "→", iconCls: "", name: "Gammes",           sub: "6 références du format poche au diamant",        badge: "action", action: () => document.getElementById("gammes")?.scrollIntoView({ behavior: "smooth" }) },
+  { id: "nav-niger",        group: "Navigation", icon: "→", iconCls: "", name: "Territoire Niger", sub: "Carte interactive · 8 régions",                  badge: "action", action: () => document.getElementById("niger")?.scrollIntoView({ behavior: "smooth" }) },
+  { id: "nav-trust",        group: "Navigation", icon: "→", iconCls: "", name: "Prestige",         sub: "Certifications · partenaires · statistiques",    badge: "action", action: () => document.getElementById("trust")?.scrollIntoView({ behavior: "smooth" }) },
+  // Sectors
+  ...SECTORS.map(s => ({
+    id: "sec-" + s.id,
+    group: "Éditions institutionnelles",
+    icon: s.cat === "Finance" ? "◆" : s.cat === "Hôtellerie" ? "◈" : s.cat.includes("Énergie") ? "◉" : "◎",
+    iconCls: s.cat === "Finance" ? "" : s.cat === "Hôtellerie" ? "emerald" : "",
+    name: s.long,
+    sub: s.short + " · " + s.motto,
+    badge: s.cat === "Finance" ? "finance" : s.cat === "Hôtellerie" ? "hotel" : s.cat.includes("Énergie") ? "energy" : "ministry",
+    action: () => {
+      document.getElementById("institutional")?.scrollIntoView({ behavior: "smooth" });
+      setTimeout(() => window.dispatchEvent(new CustomEvent("liptako:set-sector", { detail: s.id })), 600);
+    }
+  })),
+  // Gammes
+  ...PRODUCT_GAMME.map(g => ({
+    id: "gam-" + g.tag,
+    group: "Gammes",
+    icon: g.tag,
+    iconCls: "gold",
+    name: g.name,
+    sub: g.vol + " · " + g.desc.slice(0, 52) + "…",
+    badge: "action",
+    action: () => {
+      document.getElementById("gammes")?.scrollIntoView({ behavior: "smooth" });
+      setTimeout(() => openModal("devis", { inst: g.name, qty: g.vol }), 700);
+    }
+  }))
+];
+
+function SearchK() {
+  const [open, setOpen]     = useState3(false);
+  const [query, setQuery]   = useState3("");
+  const [focused, setFocused] = useState3(0);
+  const inputRef = useRef3(null);
+  const bodyRef  = useRef3(null);
+
+  // Cmd+K / Ctrl+K global shortcut
+  useEffect3(() => {
+    function onKey(e) {
+      if ((e.metaKey || e.ctrlKey) && e.key === "k") {
+        e.preventDefault();
+        setOpen(o => !o);
+      }
+    }
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, []);
+
+  // Focus input when opened
+  useEffect3(() => {
+    if (open) {
+      setQuery(""); setFocused(0);
+      setTimeout(() => inputRef.current?.focus(), 50);
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+  }, [open]);
+
+  // Keyboard navigation inside palette
+  useEffect3(() => {
+    if (!open) return;
+    function onKey(e) {
+      if (e.key === "Escape") { setOpen(false); return; }
+      if (e.key === "ArrowDown") { e.preventDefault(); setFocused(f => Math.min(f + 1, filtered.length - 1)); }
+      if (e.key === "ArrowUp")   { e.preventDefault(); setFocused(f => Math.max(f - 1, 0)); }
+      if (e.key === "Enter")     { e.preventDefault(); filtered[focused]?.action(); setOpen(false); }
+    }
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [open, focused]);
+
+  // Scroll focused item into view
+  useEffect3(() => {
+    const el = bodyRef.current?.querySelector(".sk-item.focused");
+    el?.scrollIntoView({ block: "nearest" });
+  }, [focused]);
+
+  const q = query.trim().toLowerCase();
+  const filtered = q
+    ? SK_ITEMS.filter(it =>
+        it.name.toLowerCase().includes(q) ||
+        it.sub.toLowerCase().includes(q) ||
+        it.group.toLowerCase().includes(q)
+      )
+    : SK_ITEMS;
+
+  // Group items
+  const groups = filtered.reduce((acc, item) => {
+    (acc[item.group] = acc[item.group] || []).push(item);
+    return acc;
+  }, {});
+
+  function run(item) { item.action(); setOpen(false); }
+
+  if (!open) return (
+    <button className="sk-trigger" onClick={() => setOpen(true)} title="Cmd+K">
+      <svg className="sk-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5">
+        <circle cx="7" cy="7" r="4.5"/>
+        <path d="M11 11l3 3"/>
+      </svg>
+      <span>Rechercher…</span>
+      <kbd>⌘K</kbd>
+    </button>
+  );
+
+  return (
+    <div className="sk-overlay" onClick={e => { if (e.target === e.currentTarget) setOpen(false); }}>
+      <div className="sk-shell" role="dialog" aria-modal="true" aria-label="Recherche Liptako">
+        <div className="sk-input-row">
+          <svg width="18" height="18" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5">
+            <circle cx="7" cy="7" r="4.5"/><path d="M11 11l3 3"/>
+          </svg>
+          <input
+            ref={inputRef}
+            value={query}
+            onChange={e => { setQuery(e.target.value); setFocused(0); }}
+            placeholder="Rechercher une édition, une gamme, une action…"
+            autoComplete="off"
+            spellCheck={false}
+          />
+          <span className="sk-esc">ESC</span>
+        </div>
+
+        <div className="sk-body" ref={bodyRef}>
+          {filtered.length === 0 ? (
+            <div className="sk-empty">
+              <p>Aucun résultat pour « {query} »</p>
+              <small>Essayez : échantillon · Radisson · devis · Sonidep</small>
+            </div>
+          ) : (
+            Object.entries(groups).map(([grp, items]) => {
+              let cursor = 0;
+              Object.entries(groups).some(([g, it]) => { if (g === grp) return true; cursor += it.length; return false; });
+              return (
+                <div key={grp}>
+                  <div className="sk-group-label">{grp}</div>
+                  {items.map((item, i) => {
+                    const idx = cursor + i;
+                    return (
+                      <button
+                        key={item.id}
+                        className={"sk-item" + (idx === focused ? " focused" : "")}
+                        onClick={() => run(item)}
+                        onMouseEnter={() => setFocused(idx)}
+                      >
+                        <span className={"sk-item-icon " + item.iconCls}>{item.icon}</span>
+                        <span className="sk-item-body">
+                          <span className="sk-item-name">{item.name}</span>
+                          <span className="sk-item-sub">{item.sub}</span>
+                        </span>
+                        <span className="sk-item-right">
+                          <span className={"sk-badge " + item.badge}>{item.badge === "ministry" ? "Ministère" : item.badge === "finance" ? "Finance" : item.badge === "hotel" ? "Hôtellerie" : item.badge === "energy" ? "Énergie" : item.group === "Gammes" ? "Gamme" : item.group === "Navigation" ? "Page" : "Action"}</span>
+                          {idx === focused && <span className="sk-enter-hint">↵</span>}
+                        </span>
+                      </button>
+                    );
+                  })}
+                </div>
+              );
+            })
+          )}
+        </div>
+
+        <div className="sk-footer">
+          <div className="sk-footer-keys">
+            <span><kbd>↑↓</kbd> naviguer</span>
+            <span><kbd>↵</kbd> ouvrir</span>
+            <span><kbd>ESC</kbd> fermer</span>
+          </div>
+          <div className="sk-count">{filtered.length} résultat{filtered.length !== 1 ? "s" : ""}</div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+// === app.jsx ===
+
+// App entry
+function App() {
+  useReveal();
+  return (
+    <>
+      <Loader />
+      <ScrollProgress />
+      <CursorDot />
+      <Nav />
+      <main>
+        <Hero />
+        <Manifeste />
+        <Chapters />
+        <Institutional />
+        <Gammes />
+        <Niger />
+        <Trust />
+        <CtaStrip />
+      </main>
+      <Footer />
+      <LiptakoBot />
+      <Concierge />
+      <Modal />
+      <SearchK />
+    </>
+  );
+}
+
+const root = ReactDOM.createRoot(document.getElementById("app"));
+root.render(<App />);
+
+  </script>
+</body>
+</html>
